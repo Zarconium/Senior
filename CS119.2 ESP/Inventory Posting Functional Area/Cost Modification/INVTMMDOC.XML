@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Cost Modifications Business Object
+-->
+<PostInvCostModification xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMMDOC.XSD">
+  <Item>
+    <Journal/>
+    <Warehouse>E</Warehouse>
+    <StockCode>A100</StockCode>
+    <Quantity>2</Quantity>
+    <UnitOfMeasure/>
+    <Units/>
+    <Pieces/>
+    <PreviousCost>355.00000</PreviousCost>
+    <NewUnitCost>375.00000</NewUnitCost>
+    <NewTotalCost/>
+    <Reference>Cost mod</Reference>
+    <Notation>Cost modification note</Notation>
+    <LedgerCode>30-5610</LedgerCode>
+    <PasswordForLedgerCode/>
+    <eSignature/>
+    <AnalysisEntry/>
+    <AnalysisLineEntry>
+      <AnalysisCode1>Air</AnalysisCode1>
+      <AnalysisCode2>Conf</AnalysisCode2>
+      <AnalysisCode3>East</AnalysisCode3>
+      <AnalysisCode4/>
+      <AnalysisCode5/>
+      <StartDate/>
+      <EndDate/>
+      <EntryAmount>100</EntryAmount>
+      <Comment>Analysis entry details</Comment>
+    </AnalysisLineEntry>
+  </Item>
+</PostInvCostModification>

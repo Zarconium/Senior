@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate
+     use of the Inventory Receipts Business Object
+-->
+<postinvreceipts Language="05" Language2="EN" CssStyle="" DecFormat="1" DateFormat="01" Role="01" Version="6.0.029" OperatorPrimaryRole="   ">
+  <Item>
+    <ReceiptItem>
+      <ItemNumber>000001</ItemNumber>
+      <StockCode>000000000000033</StockCode>
+      <Warehouse>BB</Warehouse>
+      <LotNumber>0000001106</LotNumber>
+      <Journal>00123</Journal>
+      <EntryNumber>00001</EntryNumber>
+    </ReceiptItem>
+    <ReceiptItem>
+      <ItemNumber>000002</ItemNumber>
+      <StockCode>000000000000033</StockCode>
+      <Warehouse>CC</Warehouse>
+      <LotNumber>0000001107</LotNumber>
+      <Journal>00124</Journal>
+      <EntryNumber>00001</EntryNumber>
+    </ReceiptItem>
+    <ReceiptItem>
+      <ItemNumber>000003</ItemNumber>
+      <StockCode>000000000000033</StockCode>
+      <Warehouse>BB</Warehouse>
+      <LotNumber>0000001108</LotNumber>
+      <Journal>00123</Journal>
+      <EntryNumber>00003</EntryNumber>
+    </ReceiptItem>
+    <ItemNumber>000003</ItemNumber>
+  </Item>
+  <Key>
+    <JnlYear>1999</JnlYear>
+    <JnlMonth>02</JnlMonth>
+    <Journal>00123</Journal>
+    <EntryNumber>00004</EntryNumber>
+    <Warehouse>BB</Warehouse>
+    - <GlJournal>
+      <GlYear>1999</GlYear>
+      <GlPeriod>02</GlPeriod>
+      <GlJournal>00317</GlJournal>
+    </GlJournal>
+  </Key>
+  <Key>
+    <JnlYear>1999</JnlYear>
+    <JnlMonth>02</JnlMonth>
+    <Journal>00124</Journal>
+    <EntryNumber>00002</EntryNumber>
+    <Warehouse>CC</Warehouse>
+  </Key>
+  <StatusOfItems>
+    <ItemsProcessed>3</ItemsProcessed>
+    <ItemsInvalid>0</ItemsInvalid>
+  </StatusOfItems>
+</postinvreceipts>

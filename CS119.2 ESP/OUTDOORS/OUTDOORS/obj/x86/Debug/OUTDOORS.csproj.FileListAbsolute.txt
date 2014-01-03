@@ -1,0 +1,23 @@
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\OUTDOORS.exe
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\OUTDOORS.pdb
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Main.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Properties.Resources.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.exe
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.pdb
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\SYSPROWCFServicesClientLibrary40.dll
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.exe
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.pdb
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\OUTDOORS.exe
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\OUTDOORS.pdb
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\SYSPROWCFServicesClientLibrary40.dll
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Main.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Properties.Resources.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Invqry.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Output.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.About.resources

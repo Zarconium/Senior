@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Cost Changes Business Object
+-->
+<PostInvCostChange xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMCDOC.XSD">
+  <Item>
+    <Journal/>
+    <Warehouse>E</Warehouse>
+    <StockCode>A100</StockCode>
+    <NewUnitCost>360.00000</NewUnitCost>
+    <NewTotalCost/>
+    <UpdateLastCost>Y</UpdateLastCost>
+    <FifoBucket>0</FifoBucket>
+    <Reference>Cost chg</Reference>
+    <Notation>Cost change note</Notation>
+    <LedgerCode>30-5600</LedgerCode>
+    <PasswordForLedgerCode/>
+    <eSignature/>
+    <AnalysisEntry/>
+    <AnalysisLineEntry>
+      <AnalysisCode1>Air</AnalysisCode1>
+      <AnalysisCode2>Conf</AnalysisCode2>
+      <AnalysisCode3>East</AnalysisCode3>
+      <AnalysisCode4/>
+      <AnalysisCode5/>
+      <StartDate/>
+      <EndDate/>
+      <EntryAmount>100</EntryAmount>
+      <Comment>Analysis entry details</Comment>
+    </AnalysisLineEntry>
+  </Item>
+</PostInvCostChange>

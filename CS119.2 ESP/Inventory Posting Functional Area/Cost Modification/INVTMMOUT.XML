@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate
+     use of the Inventory Cost Modifications Business Object
+-->
+<postinvcostmodification Language="05" CssStyle="" DecFormat="1" DateFormat="01">
+<Item>
+<ItemNumber>000001</ItemNumber> 
+</Item>
+<Key>
+<JnlYear>2006</JnlYear> 
+<JnlMonth>03</JnlMonth> 
+<Journal>01396</Journal> 
+<EntryNumber>00001</EntryNumber> 
+<Warehouse>FG</Warehouse> 
+</Key>
+<StatusOfItems> 
+<ItemsProcessed>1</ItemsProcessed> 
+<ItemsInvalid>0</ItemsInvalid> 
+</StatusOfItems>
+</postinvcostmodification>

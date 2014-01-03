@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Expense Issues Business Object
+-->
+<PostInvExpenseIssues xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTME.XSD">
+  <Parameters>
+    <TransactionDate>2006-11-28</TransactionDate>
+    <PostingPeriod>C</PostingPeriod>
+    <CreateLotNumber>N</CreateLotNumber>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <ApplyIfEntireDocumentValid>Y</ApplyIfEntireDocumentValid>
+    <ValidateOnly>N</ValidateOnly>
+    <IgnoreAnalysis>Y</IgnoreAnalysis>
+    <AskAnalysis>N</AskAnalysis>
+  </Parameters>
+</PostInvExpenseIssues>

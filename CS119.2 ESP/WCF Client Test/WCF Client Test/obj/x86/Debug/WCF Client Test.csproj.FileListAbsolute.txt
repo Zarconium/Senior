@@ -1,0 +1,19 @@
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\bin\Debug\WCF Client Test.exe
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\bin\Debug\WCF Client Test.pdb
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\bin\Debug\SYSPROWCFServicesClientLibrary40.dll
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF_Client_Test.Form1.resources
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF_Client_Test.Properties.Resources.resources
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF Client Test.exe
+c:\users\user_2\documents\visual studio 2010\Projects\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF Client Test.pdb
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF Client Test.exe
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF Client Test.pdb
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\bin\Debug\WCF Client Test.exe
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\bin\Debug\WCF Client Test.pdb
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF_Client_Test.Form1.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\obj\x86\Debug\WCF_Client_Test.Properties.Resources.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\WCF Client Test\WCF Client Test\obj\x86\Debug\GenerateResource.write.1.tlog

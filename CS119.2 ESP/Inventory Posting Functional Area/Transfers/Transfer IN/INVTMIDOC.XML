@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Warehouse Transfers In Business Object
+-->
+<PostInvWhTransferIn xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMIDOC.XSD">
+  <Item>
+    <Journal/>
+    <StockCode>SER200</StockCode>
+    <Version/>
+    <Release/>
+    <Quantity>3</Quantity>
+    <UnitOfMeasure/>
+    <Units/>
+    <Pieces/>
+    <Warehouse>N</Warehouse>
+    <Bin>E1</Bin>
+    <Lot/>
+    <Reference>Xfer IN</Reference>
+    <Notation>Note</Notation>
+    <LedgerCode>30-1540</LedgerCode>
+    <PasswordForLedgerCode/>
+    <Serials>
+      <SerialNumber>BCS0418</SerialNumber>
+      <SerialQuantity>1</SerialQuantity>
+      <SerialUnits/>
+      <SerialPieces/>
+    </Serials>
+    <SerialAllocation>
+      <FromSerialNumber>BCS0420</FromSerialNumber>
+      <ToSerialNumber>BCS0421</ToSerialNumber>
+      <SerialQuantity>2.000</SerialQuantity>
+    </SerialAllocation>
+    <eSignature/>
+  </Item>
+</PostInvWhTransferIn>

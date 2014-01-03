@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Receipts Business Object
+-->
+<PostInvReceipts xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMRDOC.XSD">
+  <Item>
+    <Warehouse>E</Warehouse>
+    <StockCode>SER200</StockCode>
+    <Quantity>9.000</Quantity>
+    <UnitCost>115.00000</UnitCost>
+    <UseSingleTypeABCElements>N</UseSingleTypeABCElements>
+    <Bins>
+      <BinLocation>A1</BinLocation>
+      <BinQuantity>9.000</BinQuantity>
+    </Bins>
+    <Serials>
+      <SerialNumber>0206</SerialNumber>
+      <SerialQuantity>1</SerialQuantity>
+    </Serials>
+    <SerialRange>
+      <SerialPrefix>BCT</SerialPrefix>
+      <SerialSuffix>1</SerialSuffix>
+      <SerialQuantity>8</SerialQuantity>
+    </SerialRange>
+    <SerialAllocation>
+      <FromSerialNumber>0205</FromSerialNumber>
+      <ToSerialNumber>0209</ToSerialNumber>
+      <SerialQuantity>10.000</SerialQuantity>
+    </SerialAllocation>
+    <ApplyCostMultiplier>Y</ApplyCostMultiplier>
+    <NonMerchandiseCost>150.00</NonMerchandiseCost>
+    <NonMerchandiseDistribution>
+      <NmReference>Cost Ref</NmReference>
+      <NmLedgerCode>30-1120</NmLedgerCode>
+      <NmAmount>150.00</NmAmount>
+    </NonMerchandiseDistribution>
+    <Reference>Receipt</Reference>
+    <Notation>Receipt note</Notation>
+    <AnalysisLineEntry>
+      <AnalysisCode1>Air</AnalysisCode1>
+      <AnalysisCode2>Conf</AnalysisCode2>
+      <AnalysisCode3>East</AnalysisCode3>
+      <EntryAmount>100</EntryAmount>
+      <Comment>Analysis entry details</Comment>
+    </AnalysisLineEntry>
+  </Item>
+</PostInvReceipts>

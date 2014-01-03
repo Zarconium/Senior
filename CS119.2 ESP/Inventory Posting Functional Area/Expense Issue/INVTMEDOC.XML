@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Expense Issues Business Object
+-->
+<PostInvExpenseIssues xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMEDOC.XSD">
+  <Item>
+    <Journal/>
+    <Warehouse>N</Warehouse>
+    <StockCode>SER200</StockCode>
+    <Version/>
+    <Release/>
+    <Quantity>4</Quantity>
+    <UnitOfMeasure/>
+    <Units/>
+    <Pieces/>
+    <BinLocation>E1</BinLocation>
+    <FifoBucket></FifoBucket>
+    <Lot></Lot>
+    <Reference>Iss Ref</Reference>
+    <Notation>Expense Issue</Notation>
+    <LedgerCode>30-5620</LedgerCode>
+    <PasswordForLedgerCode/>
+    <Serials>
+      <SerialNumber>BCS0408</SerialNumber>
+      <SerialQuantity>1</SerialQuantity>
+      <SerialUnits/>
+      <SerialPieces/>
+      <SerialFifoBucket></SerialFifoBucket>
+      <SerialLocation></SerialLocation>
+      <SerialExpiryDate>2006-10-31</SerialExpiryDate>
+    </Serials>
+    <SerialAllocation>
+      <FromSerialNumber>BCS0414</FromSerialNumber>
+      <ToSerialNumber>BCS0416</ToSerialNumber>
+      <SerialQuantity>3</SerialQuantity>
+    </SerialAllocation>
+    <eSignature/>
+    		<AnalysisEntry/>
+		<AnalysisLineEntry>
+			<AnalysisCode1>Air</AnalysisCode1>
+			<AnalysisCode2>Conf</AnalysisCode2>
+			<AnalysisCode3>East</AnalysisCode3>
+			<AnalysisCode4/>
+			<AnalysisCode5/>
+			<StartDate/>
+			<EndDate/>
+			<EntryAmount>100</EntryAmount>
+			<Comment>Analysis entry details</Comment>
+		</AnalysisLineEntry>
+  </Item>
+</PostInvExpenseIssues>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Adjustments Business Object
+-->
+<PostInvAdjustments xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMADOC.XSD">
+  <Item>
+    <Journal/>
+    <Warehouse>E</Warehouse>
+    <StockCode>SER200</StockCode>
+    <Version/>
+    <Release/>
+    <Quantity>1</Quantity>
+    <UnitOfMeasure/>
+    <Units/>
+    <Pieces/>
+    <BinLocation>E</BinLocation>
+    <FifoBucket/>
+    <Lot/>
+    <Reference>INV ADJ</Reference>
+    <Notation>Test INV adjustment</Notation>
+    <LedgerCode>30-5620</LedgerCode>
+    <PasswordForLedgerCode/>
+    <Serials>
+      <SerialNumber>BCS0510</SerialNumber>
+      <SerialQuantity>1</SerialQuantity>
+      <SerialUnits/>
+      <SerialPieces/>
+      <SerialFifoBucket/>
+    </Serials>
+    <SerialAllocation>
+      <FromSerialNumber>0206</FromSerialNumber>
+      <ToSerialNumber>0214</ToSerialNumber>
+      <SerialQuantity>9</SerialQuantity>
+    </SerialAllocation>
+    <eSignature/>
+    <AnalysisEntry/>
+    <AnalysisLineEntry>
+      <AnalysisCode1>Air</AnalysisCode1>
+      <AnalysisCode2>Conf</AnalysisCode2>
+      <AnalysisCode3>East</AnalysisCode3>
+      <AnalysisCode4/>
+      <AnalysisCode5/>
+      <StartDate/>
+      <EndDate/>
+      <EntryAmount>100</EntryAmount>
+      <Comment>Analysis entry details</Comment>
+    </AnalysisLineEntry>
+  </Item>
+</PostInvAdjustments>

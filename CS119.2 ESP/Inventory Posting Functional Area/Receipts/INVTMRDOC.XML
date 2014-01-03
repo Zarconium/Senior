@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Receipts Business Object
+-->
+<PostInvReceipts xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMRDOC.XSD">
+  <Item>
+    <Journal/>
+    <Warehouse>E</Warehouse>
+    <StockCode>SER200</StockCode>
+    <Version/>
+    <Release/>
+    <Quantity>9.000</Quantity>
+    <UnitOfMeasure/>
+    <Units/>
+    <Pieces/>
+    <UnitCost>115.00000</UnitCost>
+    <TotalCost/>
+    <FifoBucket/>
+    <Lot/>
+    <LotConcession/>
+    <LotExpiryDate/>
+    <UseSingleTypeABCElements>N</UseSingleTypeABCElements>
+    <Bins>
+      <BinLocation>A1</BinLocation>
+      <BinQuantity>9.000</BinQuantity>
+      <BinUnits/>
+      <BinPieces/>
+    </Bins>
+    <Serials>
+      <SerialNumber>0206</SerialNumber>
+      <SerialQuantity>1</SerialQuantity>
+      <SerialUnits/>
+      <SerialPieces/>
+      <SerialExpiryDate/>
+      <SerialLocation/>
+    </Serials>
+    <SerialRange>
+      <SerialPrefix>BCT</SerialPrefix>
+      <SerialSuffix>1</SerialSuffix>
+      <SerialQuantity>8</SerialQuantity>
+      <SerialExpiryDate/>
+      <SerialLocation/>
+    </SerialRange>
+    <SerialAllocation>
+      <FromSerialNumber>0205</FromSerialNumber>
+      <ToSerialNumber>0209</ToSerialNumber>
+      <SerialQuantity>10.000</SerialQuantity>
+    </SerialAllocation>
+    <ApplyCostMultiplier>Y</ApplyCostMultiplier>
+    <CostMultiplier/>
+    <NonMerchandiseCost>150.00</NonMerchandiseCost>
+    <NonMerchandiseDistribution>
+      <NmReference>Cost Ref</NmReference>
+      <NmLedgerCode>30-1120</NmLedgerCode>
+      <NmAmount>150.00</NmAmount>
+    </NonMerchandiseDistribution>
+    <Reference>Receipt</Reference>
+    <Notation>Receipt note</Notation>
+    <LedgerCode/>
+    <PasswordForLedgerCode/>
+    <eSignature/>
+    <AnalysisEntry/>
+    <AnalysisLineEntry>
+      <AnalysisCode1>Air</AnalysisCode1>
+      <AnalysisCode2>Conf</AnalysisCode2>
+      <AnalysisCode3>East</AnalysisCode3>
+      <AnalysisCode4/>
+      <AnalysisCode5/>
+      <StartDate/>
+      <EndDate/>
+      <EntryAmount>100</EntryAmount>
+      <Comment>Analysis entry details</Comment>
+    </AnalysisLineEntry>
+  </Item>
+</PostInvReceipts>

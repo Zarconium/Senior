@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XMLOut instance to demonstrate
+     use of the Inventory Query Business Object
+-->
+<InvQuery xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVQRYOUT.XSD">
+  <SystemInformation>
+    <CssStyle/>
+    <Language>EN</Language>
+    <DecFormat>2</DecFormat>
+    <DateFormat>01</DateFormat>
+    <Role>01</Role>
+    <Version>6.1.023</Version>
+    <CompanyId>A</CompanyId>
+    <CompanyName>Demo for Sue</CompanyName>
+    <OperatorCode>ADMIN</OperatorCode>
+    <OperatorName>Administrator</OperatorName>
+    <OperatorGroup>ADMIN</OperatorGroup>
+    <OperatorEmailAddress/>
+    <OperatorLocation/>
+    <LocalCurrency>$</LocalCurrency>
+    <LocalCurrencyDesc>$</LocalCurrencyDesc>
+    <GlPrdPerYear>12</GlPrdPerYear>
+    <ReportDate>07/12/2011 09:27</ReportDate>
+    <UseSeparatorOnReports>Y</UseSeparatorOnReports>
+    <SeparatorToUse>,</SeparatorToUse>
+    <OperatorPrimaryRole/>
+    <NoOfDigits>2</NoOfDigits>
+    <DecCharToUse>.</DecCharToUse>
+    <BOMQtyPerDecimals>6</BOMQtyPerDecimals>
+  </SystemInformation>
+  <StockItem>
+    <StockCode>A100</StockCode>
+    <Description>15 Speed Mountain Bike Boys</Description>
+    <LongDesc>Distribution</LongDesc>
+    <AlternateKey1/>
+    <AlternateKey2/>
+    <Version/>
+    <Release/>
+    <StockUom>EA</StockUom>
+    <AlternateUom>1</AlternateUom>
+    <ConvFactAltUom>1.000000</ConvFactAltUom>
+    <ConvMulDiv>M</ConvMulDiv>
+    <OtherUom>2</OtherUom>
+    <ConvFactOthUom>1.000000</ConvFactOthUom>
+    <MulDiv>M</MulDiv>
+    <StockAndAltUm>N</StockAndAltUm>
+    <PartCategory>B</PartCategory>
+    <Supplier>0000001</Supplier>
+    <SupplierName>Bicycles Unlimited</SupplierName>
+    <ProductClass>MB</ProductClass>
+    <Buyer>JD</Buyer>
+    <Planner/>
+    <TraceableType>I</TraceableType>
+    <MpsFlag>N</MpsFlag>
+    <SupercessionDate/>
+    <ResourceCode/>
+    <DrawOfficeNum/>
+    <Ebq>1.000</Ebq>
+    <DockToStock>0</DockToStock>
+    <ManufLeadTime>0</ManufLeadTime>
+    <TariffCode/>
+    <UserField1/>
+    <UserField2>0.00000</UserField2>
+    <UserField3/>
+    <UserField4/>
+    <UserField5/>
+    <LeadTime>20</LeadTime>
+    <WarehouseToUse>FS</WarehouseToUse>
+    <GrossReqRule>I</GrossReqRule>
+    <EccUser/>
+    <Mass>1.000000</Mass>
+    <Volume>0.000000</Volume>
+    <PriceCategory>A</PriceCategory>
+    <PriceMethod>C</PriceMethod>
+    <CycleCount>0</CycleCount>
+    <TaxCode>A</TaxCode>
+    <OtherTaxCode/>
+    <ListPriceCode>A</ListPriceCode>
+    <SerialMethod>N</SerialMethod>
+    <KitType>N</KitType>
+    <BulkIssueFlag>N</BulkIssueFlag>
+    <AbcClass/>
+    <StockMovementReq>Y</StockMovementReq>
+    <ClearingFlag>N</ClearingFlag>
+    <AbcAnalysisReq>Y</AbcAnalysisReq>
+    <AbcCostingReq>N</AbcCostingReq>
+    <CostUom>EA</CostUom>
+    <StockOnHold/>
+    <StockOnHoldReason/>
+    <ApprovedManufactures>
+</ApprovedManufactures>
+    <Narrations>
+      <InspectionText>
+        <Text>Make sure that all goods are tested on the</Text>
+        <Text>obstacle course.</Text>
+      </InspectionText>
+      <PurchaseOrderAdditionalText>
+        <Text>Please send our certification on all bicyle</Text>
+        <Text>components</Text>
+      </PurchaseOrderAdditionalText>
+      <SalesOrderAdditionalText>
+        <Text>Please make sure that you purchase the</Text>
+        <Text>correct bicycle accessories.</Text>
+      </SalesOrderAdditionalText>
+      <TechnicalInformation>
+        <Text>Bicycle comforms to our specified standards</Text>
+        <Text>and comes with certification on all</Text>
+        <Text>components.</Text>
+        <Text>Warrenties are in place.</Text>
+      </TechnicalInformation>
+    </Narrations>
+  </StockItem>
+  <WarehouseItem>
+    <Warehouse>S</Warehouse>
+    <Description>Southern Warehouse</Description>
+    <QtyOnHand>7455.000</QtyOnHand>
+    <AvailableQty>7355.000</AvailableQty>
+    <QtyOnOrder>50.000</QtyOnOrder>
+    <QtyInInspection>0.000</QtyInInspection>
+    <MinimumQty>0.000</MinimumQty>
+    <MaximumQty>0.000</MaximumQty>
+    <QtyOnBackOrder>100.000</QtyOnBackOrder>
+    <QtyAllocated>100.000</QtyAllocated>
+    <MtdQtyReceived>0.000</MtdQtyReceived>
+    <MtdQtyAdjusted>0.000</MtdQtyAdjusted>
+    <MtdQtyIssued>0.000</MtdQtyIssued>
+    <YtdQtySold>290.000</YtdQtySold>
+    <PrevYearQtySold>3255.000</PrevYearQtySold>
+    <QtyInTransit>0.000</QtyInTransit>
+    <QtyAllocatedWip>0.000</QtyAllocatedWip>
+    <MtdQtySold Height="024" Top="    650">155.000</MtdQtySold>
+    <MtdQtyTrf>0.000</MtdQtyTrf>
+    <UserField1/>
+    <UserField2/>
+    <UserField3/>
+    <DefaultBin/>
+    <UnitCost>350.00000</UnitCost>
+    <SalesQtyByMonth>
+      <SalesQty1 Height="021">135.000</SalesQty1>
+      <SalesQty2 Height="058">380.000</SalesQty2>
+      <SalesQty3 Height="004">25.000</SalesQty3>
+      <SalesQty4 Height="069">450.000</SalesQty4>
+      <SalesQty5 Height="100">650.000</SalesQty5>
+      <SalesQty6 Height="046">300.000</SalesQty6>
+      <SalesQty7 Height="092">600.000</SalesQty7>
+      <SalesQty8 Height="008">50.000</SalesQty8>
+      <SalesQty9 Height="000">0.000</SalesQty9>
+      <SalesQty10 Height="031">200.000</SalesQty10>
+      <SalesQty11 Height="015">100.000</SalesQty11>
+      <SalesQty12 Height="062">400.000</SalesQty12>
+    </SalesQtyByMonth>
+    <Movement Type="I">
+      <EntryDate>2006-02-25</EntryDate>
+      <TrnQty>250.000</TrnQty>
+      <TrnType>R</TrnType>
+      <GlCode>20-2010</GlCode>
+      <Journal>59</Journal>
+      <Reference>000000212</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <PurchaseOrder>000373</PurchaseOrder>
+      <Supplier>0000001</Supplier>
+      <SupplierName>Bicycles Unlimited</SupplierName>
+      <TrnValue>87500.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-03-05</EntryDate>
+      <Invoice>100478</Invoice>
+      <TrnQty>25.000</TrnQty>
+      <TrnValue>14000.00</TrnValue>
+      <Area>S</Area>
+      <SalesOrder>000805</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>8750.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000003</Customer>
+      <Name>Bikes and Blades - South</Name>
+      <Branch>20</Branch>
+      <Salesperson>201</Salesperson>
+      <CustomerPoNumber>South 568</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-03-05</EntryDate>
+      <Invoice>100481</Invoice>
+      <TrnQty>10.000</TrnQty>
+      <TrnValue>5600.00</TrnValue>
+      <Area>S</Area>
+      <SalesOrder>000808</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>3500.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000007</Customer>
+      <Name>Country Gardens - South</Name>
+      <Branch>20</Branch>
+      <Salesperson>201</Salesperson>
+      <CustomerPoNumber>South 9778</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-03-17</EntryDate>
+      <Invoice>100482</Invoice>
+      <TrnQty>100.000</TrnQty>
+      <TrnValue>56000.00</TrnValue>
+      <Area>S</Area>
+      <SalesOrder>000812</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>35000.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000011</Customer>
+      <Name>Maniac Sports - South</Name>
+      <Branch>20</Branch>
+      <Salesperson>201</Salesperson>
+      <CustomerPoNumber>South 241</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-04-05</EntryDate>
+      <Invoice>100499</Invoice>
+      <TrnQty>50.000</TrnQty>
+      <TrnValue>28000.00</TrnValue>
+      <Area>S</Area>
+      <SalesOrder>000817</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>17500.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000003</Customer>
+      <Name>Bikes and Blades - South</Name>
+      <Branch>20</Branch>
+      <Salesperson>201</Salesperson>
+      <CustomerPoNumber>South 568</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-04-09</EntryDate>
+      <Invoice>100504</Invoice>
+      <TrnQty>100.000</TrnQty>
+      <TrnValue>56000.00</TrnValue>
+      <Area>S</Area>
+      <SalesOrder>000823</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>35000.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000011</Customer>
+      <Name>Maniac Sports - South</Name>
+      <Branch>20</Branch>
+      <Salesperson>201</Salesperson>
+      <CustomerPoNumber>South 245</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-09-19</EntryDate>
+      <Invoice>100530</Invoice>
+      <TrnQty>5.000</TrnQty>
+      <TrnValue>2800.00</TrnValue>
+      <Area>S</Area>
+      <SalesOrder>000842</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>1750.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000007</Customer>
+      <Name>Country Gardens - South</Name>
+      <Branch>20</Branch>
+      <Salesperson>201</Salesperson>
+      <CustomerPoNumber>South 9785</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+  </WarehouseItem>
+  <WarehouseItem>
+    <Warehouse>N</Warehouse>
+    <Description>Northern Warehouse</Description>
+    <QtyOnHand>15352.000</QtyOnHand>
+    <AvailableQty>14752.000</AvailableQty>
+    <QtyOnOrder>1500.000</QtyOnOrder>
+    <QtyInInspection>0.000</QtyInInspection>
+    <MinimumQty>0.000</MinimumQty>
+    <MaximumQty>0.000</MaximumQty>
+    <QtyOnBackOrder>600.000</QtyOnBackOrder>
+    <QtyAllocated>600.000</QtyAllocated>
+    <MtdQtyReceived>0.000</MtdQtyReceived>
+    <MtdQtyAdjusted>0.000</MtdQtyAdjusted>
+    <MtdQtyIssued>0.000</MtdQtyIssued>
+    <YtdQtySold>2010.000</YtdQtySold>
+    <PrevYearQtySold>9350.000</PrevYearQtySold>
+    <QtyInTransit>10.000</QtyInTransit>
+    <QtyAllocatedWip>0.000</QtyAllocatedWip>
+    <MtdQtySold Height="074" Top="   1500">1110.000</MtdQtySold>
+    <MtdQtyTrf>-33.000</MtdQtyTrf>
+    <UserField1/>
+    <UserField2/>
+    <UserField3/>
+    <DefaultBin/>
+    <UnitCost>350.00000</UnitCost>
+    <SalesQtyByMonth>
+      <SalesQty1 Height="060">900.000</SalesQty1>
+      <SalesQty2 Height="033">500.000</SalesQty2>
+      <SalesQty3 Height="017">250.000</SalesQty3>
+      <SalesQty4 Height="100">1500.000</SalesQty4>
+      <SalesQty5 Height="087">1300.000</SalesQty5>
+      <SalesQty6 Height="073">1100.000</SalesQty6>
+      <SalesQty7 Height="060">900.000</SalesQty7>
+      <SalesQty8 Height="027">400.000</SalesQty8>
+      <SalesQty9 Height="007">100.000</SalesQty9>
+      <SalesQty10 Height="100">1500.000</SalesQty10>
+      <SalesQty11 Height="033">500.000</SalesQty11>
+      <SalesQty12 Height="047">700.000</SalesQty12>
+    </SalesQtyByMonth>
+    <Movement Type="I">
+      <EntryDate>2006-03-26</EntryDate>
+      <TrnQty>1000.000</TrnQty>
+      <TrnType>R</TrnType>
+      <GlCode>10-2010</GlCode>
+      <Journal>4</Journal>
+      <Reference>000000220</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <PurchaseOrder>000370</PurchaseOrder>
+      <Supplier>0000001</Supplier>
+      <SupplierName>Bicycles Unlimited</SupplierName>
+      <TrnValue>350000.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+    </Movement>
+    <Movement Type="I">
+      <EntryDate>2006-03-26</EntryDate>
+      <TrnQty>1000.000</TrnQty>
+      <TrnType>R</TrnType>
+      <GlCode>10-2010</GlCode>
+      <Journal>4</Journal>
+      <Reference>000000221</Reference>
+      <AddReference/>
+      <JournalEntry>8</JournalEntry>
+      <PurchaseOrder>000380</PurchaseOrder>
+      <Supplier>0000001</Supplier>
+      <SupplierName>Bicycles Unlimited</SupplierName>
+      <TrnValue>350000.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-03-29</EntryDate>
+      <Invoice>100494</Invoice>
+      <TrnQty>100.000</TrnQty>
+      <TrnValue>56000.00</TrnValue>
+      <Area>N</Area>
+      <SalesOrder>000811</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>35000.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000010</Customer>
+      <Name>Maniac Sports - North</Name>
+      <Branch>10</Branch>
+      <Salesperson>100</Salesperson>
+      <CustomerPoNumber>North 375</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-04-01</EntryDate>
+      <Invoice>100497</Invoice>
+      <TrnQty>500.000</TrnQty>
+      <TrnValue>280000.00</TrnValue>
+      <Area>N</Area>
+      <SalesOrder>000815</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>175000.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000001</Customer>
+      <Name>Bayside Bikes</Name>
+      <Branch>10</Branch>
+      <Salesperson>100</Salesperson>
+      <CustomerPoNumber>BB 809</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-04-02</EntryDate>
+      <Invoice>100498</Invoice>
+      <TrnQty>100.000</TrnQty>
+      <TrnValue>56000.00</TrnValue>
+      <Area>N</Area>
+      <SalesOrder>000816</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>35000.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000002</Customer>
+      <Name>Bikes and Blades - North</Name>
+      <Branch>10</Branch>
+      <Salesperson>100</Salesperson>
+      <CustomerPoNumber>North 7375</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-04-08</EntryDate>
+      <Invoice>100503</Invoice>
+      <TrnQty>500.000</TrnQty>
+      <TrnValue>280000.00</TrnValue>
+      <Area>N</Area>
+      <SalesOrder>000822</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>175000.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000010</Customer>
+      <Name>Maniac Sports - North</Name>
+      <Branch>10</Branch>
+      <Salesperson>100</Salesperson>
+      <CustomerPoNumber>North 378</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+    <Movement Type="I">
+      <EntryDate>2006-04-08</EntryDate>
+      <TrnQty>-100.000</TrnQty>
+      <TrnType>T</TrnType>
+      <GlCode>10-1540</GlCode>
+      <Journal>56</Journal>
+      <Reference>N 0000001</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <TrnValue>-35000.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+      <NewWarehouse>E</NewWarehouse>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-09-19</EntryDate>
+      <Invoice>100529</Invoice>
+      <TrnQty>10.000</TrnQty>
+      <TrnValue>5600.00</TrnValue>
+      <Area>N</Area>
+      <SalesOrder>000841</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>3500.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000001</Customer>
+      <Name>Bayside Bikes</Name>
+      <Branch>10</Branch>
+      <Salesperson>100</Salesperson>
+      <CustomerPoNumber>BB 810</CustomerPoNumber>
+      <DocType>I</DocType>
+    </Movement>
+  </WarehouseItem>
+  <WarehouseItem>
+    <Warehouse>E</Warehouse>
+    <Description>Eastern Warehouse</Description>
+    <QtyOnHand>108390.000</QtyOnHand>
+    <AvailableQty>107411.153</AvailableQty>
+    <QtyOnOrder>1341.000</QtyOnOrder>
+    <QtyInInspection>0.000</QtyInInspection>
+    <MinimumQty>0.000</MinimumQty>
+    <MaximumQty>0.000</MaximumQty>
+    <QtyOnBackOrder>871.847</QtyOnBackOrder>
+    <QtyAllocated>978.847</QtyAllocated>
+    <MtdQtyReceived>102123.000</MtdQtyReceived>
+    <MtdQtyAdjusted>7.000</MtdQtyAdjusted>
+    <MtdQtyIssued>3024.000</MtdQtyIssued>
+    <YtdQtySold>589.000</YtdQtySold>
+    <PrevYearQtySold>5100.000</PrevYearQtySold>
+    <QtyInTransit>100.000</QtyInTransit>
+    <QtyAllocatedWip>0.000</QtyAllocatedWip>
+    <MtdQtySold Height="033" Top="   1450">479.000</MtdQtySold>
+    <MtdQtyTrf>-105.000</MtdQtyTrf>
+    <UserField1/>
+    <UserField2/>
+    <UserField3/>
+    <DefaultBin>E</DefaultBin>
+    <UnitCost>382.28633</UnitCost>
+    <SalesQtyByMonth>
+      <SalesQty1 Height="009">125.000</SalesQty1>
+      <SalesQty2 Height="017">250.000</SalesQty2>
+      <SalesQty3 Height="003">50.000</SalesQty3>
+      <SalesQty4 Height="052">750.000</SalesQty4>
+      <SalesQty5 Height="100">1450.000</SalesQty5>
+      <SalesQty6 Height="028">400.000</SalesQty6>
+      <SalesQty7 Height="041">600.000</SalesQty7>
+      <SalesQty8 Height="007">100.000</SalesQty8>
+      <SalesQty9 Height="000">0.000</SalesQty9>
+      <SalesQty10 Height="014">200.000</SalesQty10>
+      <SalesQty11 Height="017">250.000</SalesQty11>
+      <SalesQty12 Height="055">800.000</SalesQty12>
+    </SalesQtyByMonth>
+    <Movement Type="I">
+      <EntryDate>2006-09-06</EntryDate>
+      <Bin>E</Bin>
+      <TrnQty>-10.000</TrnQty>
+      <TrnType>T</TrnType>
+      <GlCode>30-1540</GlCode>
+      <Journal>74</Journal>
+      <Reference>E 0000002</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <TrnValue>-3500.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+      <NewWarehouse>FG</NewWarehouse>
+    </Movement>
+    <Movement Type="I">
+      <EntryDate>2006-09-06</EntryDate>
+      <Bin>E</Bin>
+      <TrnQty>10.000</TrnQty>
+      <TrnType>R</TrnType>
+      <GlCode>30-2010</GlCode>
+      <Journal>78</Journal>
+      <Reference>000000294</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <PurchaseOrder>000448</PurchaseOrder>
+      <Supplier>0000001</Supplier>
+      <SupplierName>Bicycles Unlimited</SupplierName>
+      <TrnValue>3500.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+    </Movement>
+    <Movement Type="I">
+      <EntryDate>2006-09-06</EntryDate>
+      <Bin>E</Bin>
+      <TrnQty>10.000</TrnQty>
+      <TrnType>R</TrnType>
+      <GlCode>30-2010</GlCode>
+      <Journal>79</Journal>
+      <Reference>000000295</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <PurchaseOrder>000449</PurchaseOrder>
+      <Supplier>0000001</Supplier>
+      <SupplierName>Bicycles Unlimited</SupplierName>
+      <TrnValue>3500.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+    </Movement>
+    <Movement Type="I">
+      <EntryDate>2006-09-06</EntryDate>
+      <Bin>E</Bin>
+      <TrnQty>10.000</TrnQty>
+      <TrnType>R</TrnType>
+      <GlCode>30-2010</GlCode>
+      <Journal>80</Journal>
+      <Reference>000000000</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <PurchaseOrder>000450</PurchaseOrder>
+      <Supplier>0000001</Supplier>
+      <SupplierName>Bicycles Unlimited</SupplierName>
+      <TrnValue>3500.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+    </Movement>
+    <Movement Type="I">
+      <EntryDate>2006-09-06</EntryDate>
+      <Bin>E</Bin>
+      <TrnQty>10.000</TrnQty>
+      <TrnType>R</TrnType>
+      <GlCode>30-2010</GlCode>
+      <Journal>81</Journal>
+      <Reference>000000001</Reference>
+      <AddReference/>
+      <JournalEntry>1</JournalEntry>
+      <PurchaseOrder>000451</PurchaseOrder>
+      <Supplier>0000001</Supplier>
+      <SupplierName>Bicycles Unlimited</SupplierName>
+      <TrnValue>3500.00</TrnValue>
+      <UnitCost>350.00000</UnitCost>
+    </Movement>
+    <Movement Type="S">
+      <EntryDate>2006-09-11</EntryDate>
+      <Invoice>100521</Invoice>
+      <TrnQty>1.000</TrnQty>
+      <TrnValue>560.00</TrnValue>
+      <SalesBin>100521</SalesBin>
+      <Area>S</Area>
+      <SalesOrder>000886</SalesOrder>
+      <OrderType>T</OrderType>
+      <CostValue>350.00</CostValue>
+      <UnitCost>350.00000</UnitCost>
+      <UnitPrice>560.00000</UnitPrice>
+      <Customer>0000003</Customer>
+      <Name>Bikes and Blades - South</Name>
+      <Branch>20</Branch>
+      <Salesperson>201</Salesperson>
+      <CustomerPoNumber/>
+      <DocType>I</DocType>
+    </Movement>
+  </WarehouseItem>
+</InvQuery>

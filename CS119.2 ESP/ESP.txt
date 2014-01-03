@@ -1,0 +1,8 @@
+INVQRY - Query
+
+INVTMR - Receipt
+INVTMA - Adjustments
+INVTMC - Cost change
+INVTMM - Cost modification
+INVTME - Expense Issue
+INVTMO - Transfer Out

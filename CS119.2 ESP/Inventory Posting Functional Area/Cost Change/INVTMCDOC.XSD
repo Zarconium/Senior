@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!--
+     Schema for Inventory Cost Changes Business Object
+-->
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="eSignature">
+    <xsd:annotation>
+      <xsd:documentation>This element contains the GUID of the current process required to authenticate the transaction when Electronic Signatures are in use.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="38"/>
+        <xsd:whiteSpace value="preserve"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="FifoBucket">
+    <xsd:annotation>
+      <xsd:documentation>This element is optional. It must be supplied if FIFO is installed or FIFO/LIFO costing is used.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="6"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PostInvCostChange">
+    <xsd:annotation>
+      <xsd:documentation>This is the root element.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element ref="Item" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Item">
+    <xsd:annotation>
+      <xsd:documentation>This is the top element for all data required to post the transaction.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType mixed="false">
+      <xsd:sequence>
+        <xsd:element ref="Journal" minOccurs="0"/>
+        <xsd:element ref="Warehouse"/>
+        <xsd:element ref="StockCode"/>
+        <xsd:element ref="NewUnitCost" minOccurs="0"/>
+        <xsd:element ref="NewTotalCost" minOccurs="0"/>
+        <xsd:element ref="UpdateLastCost" minOccurs="0"/>
+        <xsd:element ref="FifoBucket" minOccurs="0"/>
+        <xsd:element ref="Reference" minOccurs="0"/>
+        <xsd:element ref="Notation" minOccurs="0"/>
+        <xsd:element ref="LedgerCode" minOccurs="0"/>
+        <xsd:element ref="PasswordForLedgerCode" minOccurs="0"/>
+        <xsd:element ref="eSignature" minOccurs="0"/>
+        <xsd:element ref="AnalysisEntry" minOccurs="0"/>
+        <xsd:element ref="AnalysisLineEntry" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="Journal">
+    <xsd:annotation>
+      <xsd:documentation>This is the journal number to which the transaction journal entries generated will be added. It must be valid for the current posting period and warehouse and may not have been printed already. If not supplied, a new journal will be created.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="5"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="LedgerCode">
+    <xsd:annotation>
+      <xsd:documentation>This element is only used if Inventory is integrated to General Ledger or requires a Report,  and ledger codes are required for this type of inventory transaction.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="15"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NewTotalCost">
+    <xsd:annotation>
+      <xsd:documentation>New cost of the total quantity on hand in the warehouse for this stock code. The new unit cost will be calculated. Only one of the costs may be supplied. The transaction will be rejected if both are supplied or if the cost supplied is zero and the 'IgnoreWarnings' parameter is set to 'N'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="16"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="NewUnitCost">
+    <xsd:annotation>
+      <xsd:documentation>New unit cost of the specified stock code. Only one of the costs may be supplied. The transaction will be rejected if both are supplied or if the cost supplied is zero and the 'IgnoreWarnings' parameter is set to 'N'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="16"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Notation">
+    <xsd:annotation>
+      <xsd:documentation>This element is optional.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="45"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="PasswordForLedgerCode">
+    <xsd:annotation>
+      <xsd:documentation>If ledger codes required a password, this element must contain the relevant password for this ledger code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="30"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Reference">
+    <xsd:annotation>
+      <xsd:documentation>This element is optional.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="9"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="StockCode">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory and must contain a valid stock code stocked in the specified warehouse.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="1"/>
+        <xsd:maxLength value="30"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="UpdateLastCost" default="Y">
+    <xsd:annotation>
+      <xsd:documentation>This element indicates whether or not the last warehouse cost must be updated to the new unit cost. If not supplied it defaults to 'Y'. Valid values are 'Y' and 'N'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="0"/>
+        <xsd:maxLength value="1"/>
+        <xsd:enumeration value="Y"/>
+        <xsd:enumeration value="N"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="Warehouse">
+    <xsd:annotation>
+      <xsd:documentation>This element is mandatory and must stock the specified stock code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleType>
+      <xsd:restriction base="xsd:string">
+        <xsd:whiteSpace value="preserve"/>
+        <xsd:minLength value="1"/>
+        <xsd:maxLength value="2"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+  </xsd:element>
+  <xsd:element name="AnalysisEntry">
+    <xsd:annotation>
+      <xsd:documentation>If an analysis entry number has been assigned to this detail line, then use this element to store the analysis entry number. If Analysis Line entry is passed then that will overwrite and analysis number supplied in the AnalysisEntry element. </xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:element name="AnalysisLineEntry">
+    <xsd:annotation>
+      <xsd:documentation>If IgnoreAnalysis is set to 'Y" this node and all it's elements are ignored. If you are supplying your own AnalysisEntry Number ensure that you have set IgnoreAnalysis to "Y"</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="AnalysisCode1">
+          <xsd:annotation>
+            <xsd:documentation>You can specify an analysis code 1 for the analysis entry you are createing </xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="10"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="AnalysisCode2">
+          <xsd:annotation>
+            <xsd:documentation>You can specify and analysis code 2 for the analysis entry you are creating</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="10"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="AnalysisCode3">
+          <xsd:annotation>
+            <xsd:documentation>You can specify an analysis code 3 for the analysis entry you are creating</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="10"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="AnalysisCode4">
+          <xsd:annotation>
+            <xsd:documentation>You can specify and analysis code 4 for the analysis entry you are creating</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="10"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="AnalysisCode5">
+          <xsd:annotation>
+            <xsd:documentation>You can specify and analysis code 5 for the analysis entry you are createing</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="10"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="StartDate">
+          <xsd:annotation>
+            <xsd:documentation>You can specify a start date for the analysis entry you are creating</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="10"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="EndDate">
+          <xsd:annotation>
+            <xsd:documentation>You can specify an end date for the analysis entry you are creating</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="10"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="EntryAmount">
+          <xsd:annotation>
+            <xsd:documentation>You must specify and entry amount for the analysis entry you are creating.If the entry amount supplied does not agree with the calculated transaction value at runtime, the entry amount will be overwritten with the transaction value.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="16"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="Comment">
+          <xsd:annotation>
+            <xsd:documentation>You can enter a comment for the analysis entry you are creating</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="60"/>
+              <xsd:whiteSpace value="preserve"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

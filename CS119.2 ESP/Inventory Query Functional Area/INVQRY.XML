@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Query Business Object
+-->
+<Query xmlns:xsd="http://www.w3.org/2000/10/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVQRY.XSD">
+  <Key>
+    <StockCode><![CDATA[A100]]></StockCode>
+  </Key>
+  <Option>
+    <MultiMediaImageType>GIF</MultiMediaImageType>
+    <IncludeHistory>Y</IncludeHistory>
+    <IncludeBins>Y</IncludeBins>
+    <IncludeLots>Y</IncludeLots>
+    <IncludeSerials>Y</IncludeSerials>
+    <IncludeMovements>Y</IncludeMovements>
+    <MovementDateSequence>A</MovementDateSequence>
+    <MovementStartDate>2001-01-12</MovementStartDate>
+    <MaxNumberMovements>100</MaxNumberMovements>
+    <IncludeCustomForms>N</IncludeCustomForms>
+    <IncludeMovementIssues>Y</IncludeMovementIssues>
+    <IncludeMovementTransfers>Y</IncludeMovementTransfers>
+    <IncludeMovementReceipts>Y</IncludeMovementReceipts>
+    <IncludeMovementPhysical>Y</IncludeMovementPhysical>
+    <IncludeMovementAdjustments>Y</IncludeMovementAdjustments>
+    <IncludeMovementCostChanges>Y</IncludeMovementCostChanges>
+    <IncludeMovementCostMods>Y</IncludeMovementCostMods>
+    <IncludeMovementBinTransfers>Y</IncludeMovementBinTransfers>
+    <IncludeMovementInvoices>Y</IncludeMovementInvoices>
+    <IncludeMovementCreditNotes>Y</IncludeMovementCreditNotes>
+    <IncludeMovementDebitNotes>Y</IncludeMovementDebitNotes>
+    <IncludeMovementDispatchNotes>Y</IncludeMovementDispatchNotes>
+    <IncludeEcc>Y</IncludeEcc>
+    <IncludeApprovedManuf>Y</IncludeApprovedManuf>
+    <IncludeNarrations>Y</IncludeNarrations>
+    <ReturnNarrationsinBlock>N</ReturnNarrationsinBlock>
+    <XslStylesheet/>
+  </Option>
+  <Filter>
+    <Warehouse FilterType="L" FilterValue="S,N,E"/>
+  </Filter>
+</Query>

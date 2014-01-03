@@ -1,0 +1,218 @@
+<!-- RJ Cruz 11/29/13 -->
+<HTML>
+<head>
+	<title>E-AdEPT T3 Tracker</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/customize.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+</head>
+<BODY>
+<div class="info-form">
+	
+	<div class="col-md-3">
+		
+		<ul class="nav nav-tabs" id="myTab">
+			<li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+			<li><a href="#teacher" data-toggle="tab">Add or Edit Teacher</a></li>
+		</ul>
+		
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="details">
+				<form class="form" role="form"> <!-- This is the start of the blocked fields -->
+					<div class="form-group">
+						<label>School</label><!-- This is the start where you put the label -->
+						<input type="text" class="form-control" id="school"><!-- The input field. Don't forget the id -->
+					</div>
+
+					<div class="form-group">
+						<label>Location</label><!-- This is the start where you put the label -->
+						<input type="text" class="form-control" id="location"><!-- The input field. Don't forget the id -->
+					</div>
+						
+					<div class="form-group">
+						<label>Date</label><!-- This is the another label -->
+						<input type="text" class="form-control" id="date">
+					</div>
+				</form>
+			</div>
+		
+
+			<div class="tab-pane fade" id="teacher">
+				<form class="form" role="form">
+					<div class="form-group">		
+						<label>Last Name</label>			
+						<input class="form-control" type="text" id="lname">
+					</div>
+					
+					<div class="form-group">
+						<label>First Name</label>
+						<input type="text" class="form-control" id="fname">
+					</div>
+					
+					<div class="form-group">
+						<label>Middle Initial</label>
+						<input type="text" class="form-control" id="mname">
+					</div>
+					
+				</form>
+				<form class="form" role="form">
+					<div class="form-group">
+						<label>Contact Number</label><br/>
+						<input type="text" class="form-control" id="contact">
+					</div>
+					
+					<div class="form-group">
+						<label>Email/Facebook</label><br/>
+						<input type="text" class="form-control" id="email"> 
+					</div>		
+
+					<div class="form-group">
+						<label>Status</label>
+						<input type="text" class="form-control" id="status">
+					</div>
+
+					<div class="form-group">
+						<input type="checkbox" name="participants_profile" value="yes">Participant's Profile<br />
+						<input type="checkbox" name="interview" value="yes">Interview<br />
+						<input type="checkbox" name="site_visit" value="yes">Site Visit<br />
+						<input type="checkbox" name="model_release" value="yes">Model Release<br />
+						<input type="checkbox" name="adept_t3_feedback" value="yes">AdEPT T3 Feedback<br />
+						<input type="checkbox" name="adept_elearning_feedback" value="yes">AdEPT e-Learning Feedback<br />
+						<input type="checkbox" name="manual_kit" value="yes">Manual &amp; Kit<br />
+					</div>
+
+					<div class="form-group">
+						<label>Certificate of Attendance</label>
+						<input type="text" class="form-control" id="attendance">
+					</div>
+
+					<div class="form-group">
+						<label>AdEPT Certified Trainers</label>
+						<input type="text" class="form-control" id="trainers">
+					</div>
+
+					<div class="form-group">
+						<label>Control No.</label>
+						<input type="text" class="form-control" id="control_no">
+					</div>
+
+					<div class="form-group">
+						<label>Pre-Test</label>
+						<input type="text" class="form-control" id="pretest">
+					</div>
+
+					<div class="form-group">
+						<label>Lesson Plan</label>
+						<input type="text" class="form-control" id="lesson_plan">
+					</div>
+
+					<div class="form-group">
+						<label>Demo</label>
+						<input type="text" class="form-control" id="demo">
+					</div>
+
+					<div class="form-group">
+						<label>Total Weighted</label>
+						<input type="text" class="form-control" id="total_weighted">
+					</div>
+
+					<div class="form-group">
+						<label>Training Portfolio</label>
+						<input type="text" class="form-control" id="training_portfolio">
+					</div>
+
+					<div class="form-group">
+						<label>Remarks</label>
+						<input type="text" class="form-control" id="remarks">
+					</div>
+				</form>
+		
+				<div class="submit-button">
+					<button class="btn btn-primary" name="submit">Submit</button>
+				</div>
+			</div>
+			
+			
+		<script type="text/javascript">
+			jQuery(document).ready(function ($) {
+				$('#myTab').tab();
+			});
+		</script>
+		
+		</div>
+	</div>
+	
+	<div class="col-md-9">
+	
+	<legend>List of Teachers</legend>
+	
+		<button class="btn btn-danger">Delete</button>
+		<button class="btn btn-success">Refresh</button>
+		<button class="btn btn-info">Print List</button>
+		
+		<table class="table table-area">
+			<tr>
+				<th></th>
+				<th>Action</th>
+				<th>Last Name</th>
+				<th>First Name</th>
+				<th>Middle Initial</th>
+				<th>Contact Number</th>
+				<th>Email/Facebook</th>
+				<th>Status</th>
+				<th>Participant's Profile</th>
+				<th>Interview</th>
+				<th>Site Visit</th>
+				<th>Model Release</th>
+				<th>E-AdEPT T3 Feedback</th>
+				<th>E-AdEPT e-Learning Feedback</th>
+				<th>Manual &amp; Kit</th>
+				<th>Certificate of Attendance</th>
+				<th>AdEPT Certified Trainers</th>
+				<th>Control No.</th>
+				<th>Pre-Test</th>
+				<th>Lesson Plan</th>
+				<th>Demo</th>
+				<th>Total Weighted</th>
+				<th>Training Portfolio</th>
+				<th>Remarks</th>
+			</tr>
+			<tr>
+				<td><input type="checkbox"></td>
+				<td><a href="#">Edit</a> | <a href="#">Delete</a></td>
+				<td>Cruz</td>
+				<td>Raymond</td>
+				<td>C</td>
+				<td>09178316188</td>
+				<td>rjncruz@gmail.com</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>Yes</td>
+				<td>1</td>
+				<td>2</td>
+				<td>RC3515</td>
+				<td>55.55</td>
+				<td>55.55</td>
+				<td>55.55</td>
+				<td>55.55</td>
+				<td>3</td>
+				<td>Test data</td>
+			</tr>
+		</table>
+
+		<button class="btn btn-danger">Delete</button>
+		<button class="btn btn-success">Refresh</button>
+		<button class="btn btn-info">Print List</button>
+	</div>
+</div>	
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</BODY>
+
+</HTML>

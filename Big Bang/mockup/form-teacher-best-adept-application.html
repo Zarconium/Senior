@@ -1,0 +1,58 @@
+<!-- RJ 11/29/13 -->
+<HTML>
+<head>
+	<title>BEST/E-AdEPT Teacher Application</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/customize.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	
+</head>
+<BODY>
+<div class="info-form">
+
+	<div class="col-md-3">
+
+		<legend>Add or Edit Teacher</legend>
+	
+		<form class="form" role="form">
+			<div class="form-group">		
+				<label>Date of Application</label>			
+				<input class="form-control" type="text" id="date">
+			</div>
+			
+			<div class="form-group">
+				<label>Subject Taking (check all that apply)</label><br/>
+				<input type="checkbox" name="program" value="adept">BEST<br/>
+				<input type="checkbox" name="program" value="best">AdEPT<br/>
+			</div>
+			
+			<div class="form-group">
+				<label>What is your main motivation for participating in the certification program?</label>
+				<input type="text" class="form-control" id="motivation">
+			</div>
+			
+			<div class="form-group">
+				<label>Are there any schedule/work/health/personal impediments to your participation in the certification process? If yes, please explain. Include dates and other relevant details.</label>
+				<input type="text" class="form-control" id="impediments">
+			</div>
+			
+			<div class="form-group">
+				<label>Please share any relevant information not mentioned above that might help you be considered for certification.</label>
+				<input type="text" class="form-control" id="relevant_info">
+			</div>
+			
+			<div class="form-group">
+				<label>Contract</label>
+				<input type="radio" name="Contract" value="yes"> Yes
+				<input type="radio" name="Contract" value="no"> No
+			</div>
+		</form>
+		
+		<div class="submit-button">
+			<button class="btn btn-primary" name="submit">Submit</button>
+		</div>		
+	</div>
+</div>	
+</BODY>
+
+</HTML>

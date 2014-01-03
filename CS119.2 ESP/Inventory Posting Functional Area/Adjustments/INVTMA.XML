@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<!-- Copyright 1994-2010 SYSPRO Ltd.-->
+<!-- 
+     This is an example XML instance to demonstrate
+     use of the Inventory Adjustments Business Object
+-->
+<PostInvAdjustments xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="INVTMA.XSD">
+  <Parameters>
+    <TransactionDate>2006-11-28</TransactionDate>
+    <PhysicalCount>N</PhysicalCount>
+    <PostingPeriod>C</PostingPeriod>
+    <IgnoreWarnings>N</IgnoreWarnings>
+    <ApplyIfEntireDocumentValid>Y</ApplyIfEntireDocumentValid>
+    <ValidateOnly>N</ValidateOnly>
+    <IgnoreAnalysis>Y</IgnoreAnalysis>
+  </Parameters>
+</PostInvAdjustments>
