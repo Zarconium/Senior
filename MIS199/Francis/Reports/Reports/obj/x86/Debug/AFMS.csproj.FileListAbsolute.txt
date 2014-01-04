@@ -1,0 +1,61 @@
+H:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\bin\Debug\Reports.exe.config
+H:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.exe
+H:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.pdb
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\bin\Debug\Reports.exe.config
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\bin\Debug\Reports.exe
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\bin\Debug\Reports.pdb
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.AccessControlListReport.resources
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.AuditTrailReport.resources
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.Properties.Resources.resources
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.ReportOptionA.resources
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.ReportOptionB.resources
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\RdlCompile.cache
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\RdlCompile.compiled
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.exe
+G:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.pdb
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\bin\Debug\Reports.exe.config
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.exe
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\AFMS.csprojResolveAssemblyReference.cache
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.AccessControlListReport.resources
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.AuditTrailReport.resources
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.Properties.Resources.resources
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.ReportOptionA.resources
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.ReportOptionB.resources
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\AFMS.csproj.GenerateResource.Cache
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\RdlCompile.cache
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\RdlCompile.compiled
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\bin\Debug\Reports.exe
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\bin\Debug\Reports.pdb
+F:\AFMS\PRINTREPORTS\FINAL REPORT\Reports\Reports\obj\x86\Debug\Reports.pdb
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\bin\Debug\Reports.exe.config
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\Reports.exe
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\Reports.pdb
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\AFMS.csprojResolveAssemblyReference.cache
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\Reports.AccessControlListReport.resources
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\Reports.AuditTrailReport.resources
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\Reports.Properties.Resources.resources
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\Reports.ReportOptionA.resources
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\Reports.ReportOptionB.resources
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\AFMS.csproj.GenerateResource.Cache
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\RdlCompile.cache
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\obj\x86\Debug\RdlCompile.compiled
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\bin\Debug\Reports.exe
+C:\Users\Francis\Documents\Documents\OJT\Reports\Reports\bin\Debug\Reports.pdb
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\bin\Debug\Reports.exe.config
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\Reports.exe
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\Reports.pdb
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\bin\Debug\Reports.exe
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\bin\Debug\Reports.pdb
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\Reports.AccessControlListReport.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\Reports.AuditTrailReport.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\Reports.Properties.Resources.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\Reports.ReportOptionA.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\Reports.ReportOptionB.resources
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\RdlCompile.cache
+D:\Files2\RJFiles\School\Ateneo\Senior\MIS199\Francis\Reports\Reports\obj\x86\Debug\RdlCompile.compiled
