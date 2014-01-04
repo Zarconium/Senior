@@ -1,0 +1,42 @@
+1) creating a new Project in rails 
+
+rails new [project name]
+
+2) enter the rot directory of the framework/project
+
+cd [project name ]
+
+3) start the web application by running it with a server 
+
+rails server || rails s
+
+visit the application from a browser by going to http:/localhost:3000
+
+4) stop the server 
+Ctrl +c
+
+5) configured a root URL (/) under the config /routes.rb
+
+root : to => "controller_name#method"
+root : to => "pages#index"
+
+6) create controller for the routes
+
+all controller classes are found at app/controllers/pages_controller.rb
+
+7) create the view for the index page 
+
+apps/views/pages/index html.erb
+
+8) create another route called " /contact"
+under config/routes.rb
+get "/contact", :to => "pages#contact"
+
+9)created a method called contact under pages_controller.rb
+
+def contact 
+end
+
+10) create a view for contact page under app/views/pages/contact.html.erb
+
+// Built on model view controller MVC

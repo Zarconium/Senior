@@ -1,0 +1,22 @@
+<h1>All Contacts</h1>
+<%= link_to "New Contact", new_contact_path %>
+<hr>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Contact Number</th>
+		<th>Birthday</th>
+		<th>Actions</th>
+	</tr>
+	<% @contacts.each do |contact| %>
+	<tr>
+		<td><%= contact.name %></td>
+		<td><%= contact.email %></td>
+		<td><%= contact.contact_number %></td>
+		<td><%= contact.date_of_birth %></td>
+		<td><%= link_to "Delete", destroy_contact_path(contact.id), :confirm => "Are you sure?" %></td>
+	</tr>
+	<% end %>
+</table>

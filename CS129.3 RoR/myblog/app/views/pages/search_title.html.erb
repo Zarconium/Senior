@@ -1,0 +1,11 @@
+<h1>Search By Title with Letter <%= params[:letter] %></h1>
+
+<h2>Found <%= @posts.count %> posts with letter <%= params[:letter] %> in title</h2>
+
+<% if @posts.count == 0 %>
+	<p>No posts found</p>
+<% else %>
+	<% @posts.each do |post| %>
+		<h3><%= post.title %></h3>
+	<% end %>
+<% end %>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pages</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1>Header</h1>
+<h2>Navigation</h2>
+<%= link_to "Home", root_path %>
+<%= link_to "Dashboard", dashboard_path %>
+<%= link_to "Contact", contact_path %>
+
+<%= yield %>
+
+<h1>Footer</h1>
+
+</body>
+</html>
