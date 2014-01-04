@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+	<TextView
+	    android:id="@+id/consultationTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:text="Consultation Information"
+	    android:layout_alignBottom="@+id/buttonPanel"
+	    android:layout_marginBottom="10dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<LinearLayout 	android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+		        	android:id="@+id/buttonPanel"	    		
+	    			android:layout_alignParentRight="true"
+	    			
+	    >
+		<Button
+		        android:id="@+id/button_consultation_back"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Back"
+		        android:onClick="consultationBack" />
+	
+		<Button
+		        android:id="@+id/button_consultation_next"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Next"
+		        android:onClick="consultationNext" />
+	</LinearLayout>		
+	
+	<ViewFlipper
+	    android:id="@+id/consultationViewFlipper"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"	
+	    android:layout_below="@+id/consultationTitle"
+	    >
+	   
+	    <ScrollView
+	        android:id="@+id/scrollView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        >
+		    <include android:id="@+id/newConsultationFieldList"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    layout="@layout/consultation_basic_field_layout"/>
+	    </ScrollView>
+	    
+	    <include android:id="@+id/soapPane"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    layout="@layout/consultation_soap_layout"/>
+	    
+	</ViewFlipper>
+	
+	<!-- PLACE THE NEXT/PREVIOUS/CANCEL BUTTONS HERE -->
+	
+</RelativeLayout>

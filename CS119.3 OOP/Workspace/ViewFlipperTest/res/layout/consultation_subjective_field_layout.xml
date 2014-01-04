@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+<!-- 
+	Chief Complaint
+	Medical History
+ -->    
+	    
+	    <TextView android:text="Chief Complaint"		 													android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	    <EditText android:id="@+id/chief_complaint"  android:inputType="textMultiLine" android:lines="2"		android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+
+	    <TextView android:text="Medical History"		 													android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	    <EditText android:id="@+id/medical_history"  android:inputType="textMultiLine" android:lines="2"		android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+	    
+	    	    	    	    	    	    	    	    	    
+</LinearLayout>

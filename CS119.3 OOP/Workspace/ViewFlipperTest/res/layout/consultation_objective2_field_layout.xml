@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+<!-- 
+	Lab Test
+	Lab Test Results
+	LOINC
+ -->    
+
+	    <TextView android:text="Lab Test" 									  	android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    <EditText android:id="@+id/lab_test"  android:inputType="textPersonName" 	android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10"/>
+	    
+	    <TextView android:text="Lab Test Results" 										android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	    <EditText android:id="@+id/lab_test_results" android:inputType="textPersonName" 	android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+
+
+	    	    	    	    	    	    	    	    	    
+</LinearLayout>

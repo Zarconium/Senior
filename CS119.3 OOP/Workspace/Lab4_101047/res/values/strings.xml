@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lab4_101047</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="favorite_movie">Favorite Movie:</string>
+    <string name="not_set">Not Set</string>
+    <string name="select_title">Select Title</string>
+    <string-array name="movies_list">
+        <item >Avatar</item>
+        <item >Titanic</item>
+        <item >The Lord of the Rings: The Return of the King</item>
+        <item >Pirates of the Caribbean: Dead Man\'s Chest</item>
+        <item >Toy Story 3</item>
+        <item >Pirates of the Caribbean: On Stranger Tides</item>
+        <item >Alice in Wonderland</item>
+        <item >Harry Potter and the Deathly Hallows – Part 2</item>
+        <item >The Dark Knight</item>
+        <item >Transformers: Dark of the Moon</item>
+        <item >Harry Potter and the Philosopher\'s Stone</item>
+        <item >Pirates of the Caribbean: At World\'s End</item>
+        <item >Harry Potter and the Deathly Hallows – Part 1</item>
+        <item >Harry Potter and the Order of the Phoenix</item>
+        <item >Harry Potter and the Half-Blood Prince</item>
+        <item >The Lord of the Rings: The Two Towers</item>
+        <item >Star Wars Episode I: The Phantom Menace</item>
+        <item >Shrek 2</item>
+        <item >Jurassic Park</item>
+        <item >Harry Potter and the Goblet of Fire</item>
+        <item >Spider-Man 3</item>
+        <item >Ice Age: Dawn of the Dinosaurs</item>
+        <item >Harry Potter and the Chamber of Secrets</item>
+        <item >The Lord of the Rings: The Fellowship of the Ring</item>
+        <item >Finding Nemo</item>
+        <item >Star Wars Episode III: Revenge of the Sith</item>
+        <item >Transformers: Revenge of the Fallen</item>
+        <item >Inception</item>
+        <item >Spider-Man</item>
+        <item >Independence Day</item>
+        <item >Shrek the Third</item>
+        <item >Harry Potter and the Prisoner of Azkaban</item>
+        <item >E.T. the Extra-Terrestrial</item>
+        <item >Indiana Jones and the Kingdom of the Crystal Skull</item>
+        <item >The Lion King</item>
+        <item >Spider-Man 2</item>
+        <item >Star Wars</item>
+        <item >2012</item>
+        <item >The Da Vinci Code</item>
+        <item >Shrek Forever After</item>
+        <item >The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</item>
+        <item >The Matrix Reloaded</item>
+        <item >Up</item>
+        <item >The Twilight Saga: New Moon</item>
+        <item >Transformers</item>
+        <item >The Twilight Saga: Eclipse</item>
+        <item >Forrest Gump</item>
+        <item >The Sixth Sense</item>
+        <item >Ice Age: The Meltdown</item>
+        <item >Pirates of the Caribbean: The Curse of the Black Pearl</item>
+    </string-array>
+
+</resources>

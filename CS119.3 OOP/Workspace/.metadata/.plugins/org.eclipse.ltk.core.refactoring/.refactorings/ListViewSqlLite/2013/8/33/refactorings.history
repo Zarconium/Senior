@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RegionDbAdapter.java&apos; to &apos;Lab6_101047/src/com.example.lab4_101047&apos;&#x0D;&#x0A;- Original project: &apos;ListViewSqlLite&apos;&#x0D;&#x0A;- Destination element: &apos;Lab6_101047/src/com.example.lab4_101047&apos;&#x0D;&#x0A;- Original element: &apos;com.example.listviewsqllite.RegionDbAdapter.java&apos;" description="Copy compilation unit" destination="=Lab6_101047/src&lt;com.example.lab4_101047" element1="/src&lt;com.example.listviewsqllite{RegionDbAdapter.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1376226813216" units="1" version="1.0"/>
+</session>

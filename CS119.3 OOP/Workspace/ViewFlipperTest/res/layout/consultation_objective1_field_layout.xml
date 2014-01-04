@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+<!-- 
+	Temperature
+	Weight
+	Respiratory Rate
+	Pulse Rate
+	Blood Pressure
+ -->    
+
+	    <TextView android:text="Temperature" 									  	android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    <EditText android:id="@+id/temperature" android:inputType="number" 			android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10"/>
+	    
+	    <TextView android:text="Weight" 									  	android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    <EditText android:id="@+id/weight" android:inputType="number" 			android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10"/>
+	    
+	    <TextView android:text="Respiratory Rate" 									  	android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    <EditText android:id="@+id/respiratory_rate" android:inputType="number" 			android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10"/>
+	    	    
+	    <TextView android:text="Pulse Rate" 									  	android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    <EditText android:id="@+id/pulse_rate" android:inputType="number" 			android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10"/>
+
+	    <TextView android:text="Blood Pressure" 									  	android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+	    <EditText android:id="@+id/blood_pressure" android:inputType="number" 			android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10"/>
+	    	    	    	    	    	    	    	    	    	    	    
+</LinearLayout>

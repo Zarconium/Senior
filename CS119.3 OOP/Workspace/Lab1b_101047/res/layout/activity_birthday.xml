@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/birthday"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1" >
+
+        <EditText
+            android:id="@+id/editTextDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_weight="1" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forward_slash" />
+
+	    <EditText
+	        android:id="@+id/editTextMonth"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:layout_weight="1" />
+
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/forward_slash" />
+
+	    <EditText
+	        android:id="@+id/editTextYear"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:layout_weight="1" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

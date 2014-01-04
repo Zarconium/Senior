@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dip" >
+    
+
+<!-- 
+	User Name
+	Password
+	Confirm Password
+	Role
+	Email
+ -->    
+ 	<ScrollView
+ 	    	android:id="@+id/scroller" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_above="@+id/buttonPanel2"
+		    
+ 	    >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    >
+		    <TextView android:text="First Name*"		 									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		    <EditText android:id="@+id/firstname" android:hint="Enter First Name" android:inputType="textPersonName" 				android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+		    
+		    <TextView android:text="Last Name*"		 									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		    <EditText android:id="@+id/lastname" android:hint="Enter Last Name" android:inputType="textPersonName" 				android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+		    
+		    <TextView android:text="User Name*"		 									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		    <EditText android:id="@+id/username" android:hint="Enter User Name" android:inputType="text" 				android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+	
+		    <TextView android:text="Password*"		 									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		    <EditText android:id="@+id/password" android:hint="Enter Password" android:inputType="textPassword" 				android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+	
+		    <TextView android:text="Confirm Password*"		 									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		    <EditText android:id="@+id/password2" android:hint="Confirm Password" android:inputType="textPassword" 				android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+		    	    
+		    <TextView android:text="Email*"		 									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		    <EditText android:id="@+id/email" android:hint="Enter Email Address" android:inputType="textEmailAddress" 				android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+		</LinearLayout> 	    
+ 	</ScrollView>
+	    
+	<LinearLayout 	android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"
+		        	android:id="@+id/buttonPanel2"	    	
+	    			android:orientation="horizontal"
+	    			android:layout_centerHorizontal="true"
+	    			android:layout_alignParentBottom="true"
+	    			
+	    >
+		<Button
+		        android:id="@+id/register"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Register"
+		        />
+	
+		<Button
+		        android:id="@+id/cancel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Cancel"
+		        />
+	</LinearLayout>
+
+	<ProgressBar
+	    android:id="@+id/progressBar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"	    
+	    android:layout_alignParentBottom="true"	    
+	    android:layout_alignTop="@+id/buttonPanel2"
+	    android:layout_alignBottom="@+id/buttonPanel2"
+	    android:visibility="invisible" 
+	    />
+ 	    	    	    	    	    	    	    
+</RelativeLayout>

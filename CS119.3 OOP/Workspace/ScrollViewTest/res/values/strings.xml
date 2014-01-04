@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ScrollViewTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    
+        <string-array name="gender">
+        <item></item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+    <string-array name="civil_status">
+        <item></item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Widowed</item>
+    </string-array>
+
+    <string-array name="prefix">
+        <item></item>
+        <item>Mr.</item>
+        <item>Ms.</item>
+        <item>Mrs.</item>
+    </string-array>
+</resources>

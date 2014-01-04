@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+<!-- 
+	Procedure
+	Drugs Administered
+	Heath Education Given
+ -->    
+	    <TextView android:text="Procedure"		 									android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	    <EditText android:id="@+id/procedure" android:inputType="text" 				android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+
+	    <TextView android:text="Drugs Administered"		 										android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	    <EditText android:id="@+id/drugs_administered"  android:inputType="text" 					android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+	    	    	    
+	    <TextView android:text="Health Education Given"		 										android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	    <EditText android:id="@+id/health_education_given"  android:inputType="text" 					android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" />
+ 	    	    	    	    	    	    	    
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+
+	<LinearLayout android:id="@+id/button_panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/button_subjective"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="Subjective"
+	        android:onClick="soapSubjectiveStart" />
+	
+	    <Button
+	        android:id="@+id/button_objective"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:onClick="soapObjectiveStart" 
+	        android:text="Objective" />
+	
+	    <Button
+	        android:id="@+id/button_assessment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:onClick="soapAssessmentStart" 	        
+	        android:text="Assessment" />
+	
+	    <Button
+	        android:id="@+id/button_plan"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:onClick="soapPlanStart" 	        
+	        android:text="Plan" />
+		    
+	</LinearLayout>
+    	
+    <ScrollView
+	        android:id="@+id/scrollView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+		    android:layout_below="@+id/button_panel"
+	        >
+		
+		<ViewFlipper
+		    android:id="@+id/soapViewFlipper"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+		   
+		    <include android:id="@+id/soap_subjective"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_subjective_field_layout"/>
+		    
+		    <include android:id="@+id/soap_objective1"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_objective1_field_layout"/>
+	
+		    <include android:id="@+id/soap_objective2"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_objective2_field_layout"/>
+	
+		    <include android:id="@+id/soap_objective3"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_objective3_field_layout"/>
+		    
+		    <include android:id="@+id/soap_objective4"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_objective4_field_layout"/>
+	
+		    <include android:id="@+id/soap_objective5"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_objective5_field_layout"/>
+		    	    	    	    
+		    <include android:id="@+id/soap_assessment"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_assessment_field_layout"/>
+	
+		    <include android:id="@+id/soap_plan"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    layout="@layout/consultation_plan_field_layout"/>
+		    	    	    	    	    	    	    
+		</ViewFlipper>
+	</ScrollView>	
+ 
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.example.lab1_101047.HobbiesDialog"/>
+<fullyQualifiedTypeName name="android.widget.CheckBox"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.widget.RadioButton"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences.Editor"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="com.example.lab1_101047.R.id"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="com.example.lab4_101047.MainActivity.CustomAdapter"/>
+<fullyQualifiedTypeName name="android.view.MenuInflater"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.AdapterContextMenuInfo"/>
+<fullyQualifiedTypeName name="com.example.lab4_101047.MovieAddDialog"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnDismissListener"/>
+<fullyQualifiedTypeName name="com.example.lab4_101047.MovieData"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnCancelListener"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog"/>
+<fullyQualifiedTypeName name="android.database.Cursor"/>
+<fullyQualifiedTypeName name="android.widget.SimpleCursorAdapter"/>
+<fullyQualifiedTypeName name="com.example.lab4_101047.R.layout"/>
+<fullyQualifiedTypeName name="com.example.lab4_101047.DbAdapter"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="java.io.Console"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.example.lab4_101047.R.id"/>
+<fullyQualifiedTypeName name="android.content.ContentValues"/>
+<fullyQualifiedTypeName name="com.example.lab4_101047.FilterDialog"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,197 @@
+package com.example.lab4_101047;
+
+import java.io.Console;
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.app.*;
+import android.content.*;
+import android.content.DialogInterface.*;
+import android.database.*;
+import android.view.*;
+import android.view.ContextMenu.*;
+import android.widget.*;
+import android.widget.AdapterView.*;
+
+public class MainActivity extends Activity
+{
+	private DbAdapter dbHelper;
+	private SimpleCursorAdapter dataAdapter;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_list);
+		
+		dbHelper = new DbAdapter(this);
+		
+		dbHelper.open();
+		dbHelper.deleteAllMovies();
+		dbHelper.seed();
+		
+		Cursor cursor = dbHelper.fetchAllMovies();
+		
+		dataAdapter = new SimpleCursorAdapter(this, R.layout.row, cursor, new String[] { DbAdapter.KEY_TITLE, DbAdapter.KEY_GROSS, DbAdapter.KEY_YEAR }, new int[] { R.id.textViewTitle , R.id.textViewGross, R.id.textViewYear}, 0);
+		
+		ListView listView = (ListView) findViewById(R.id.listView);
+		listView.setAdapter(dataAdapter);
+		registerForContextMenu(listView);
+	}
+	
+	public void refreshCursor()
+	{
+		Cursor cursor = dbHelper.fetchAllMovies();
+		
+		dataAdapter = new SimpleCursorAdapter(this, R.layout.row, cursor, new String[] { DbAdapter.KEY_TITLE, DbAdapter.KEY_GROSS, DbAdapter.KEY_YEAR }, new int[] { R.id.textViewTitle , R.id.textViewGross, R.id.textViewYear}, 0);
+		
+		ListView listView = (ListView) findViewById(R.id.listView);
+		listView.setAdapter(dataAdapter);
+	}
+	
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo)
+    {
+    	super.onCreateContextMenu(menu, v, menuInfo);
+		getMenuInflater().inflate(R.menu.main, menu);
+	}
+	
+	@Override
+	public boolean onContextItemSelected(MenuItem item)
+	{
+		final AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
+		
+		switch (item.getItemId())
+		{
+		case R.id.add:
+			final MovieDialog add = new MovieDialog(this);
+			add.show();
+			
+			add.setOnDismissListener(new OnDismissListener()
+			{
+				@Override
+				public void onDismiss(DialogInterface dialog)
+				{
+					String title = ((EditText) add.findViewById(R.id.editTextTitle)).getText().toString();
+					String gross = ((EditText) add.findViewById(R.id.editTextGross)).getText().toString();
+					String year = ((EditText) add.findViewById(R.id.editTextYear)).getText().toString();
+					
+					dbHelper.createMovie(title, gross, year);
+					refreshCursor();
+				}
+			});
+			
+			add.setOnCancelListener(new OnCancelListener()
+			{
+				@Override
+				public void onCancel(DialogInterface arg0)
+				{
+					//Do nothing
+				}
+			});
+			
+			return true;
+			
+		case R.id.search:
+			final MovieDialog insert = new MovieDialog(this);
+			insert.show();
+			
+			insert.setOnDismissListener(new OnDismissListener()
+			{
+				@Override
+				public void onDismiss(DialogInterface dialog)
+				{
+					String title = ((EditText) insert.findViewById(R.id.editTextTitle)).getText().toString();
+					String gross = ((EditText) insert.findViewById(R.id.editTextGross)).getText().toString();
+					String year = ((EditText) insert.findViewById(R.id.editTextYear)).getText().toString();
+					
+					MovieData movie = new MovieData();
+					movie.setTitle(title);
+					movie.setGross(gross);
+					movie.setYear(year);
+					
+					/*movies.add(info.position, movie);
+					adapter.notifyDataSetChanged();*/
+				}
+			});
+			
+			insert.setOnCancelListener(new OnCancelListener()
+			{
+				@Override
+				public void onCancel(DialogInterface arg0)
+				{
+					//Do nothing
+				}
+			});
+			
+			return true;
+			
+		case R.id.edit:
+			final MovieDialog edit = new MovieDialog(this);
+			edit.show();
+			
+			((EditText) edit.findViewById(R.id.editTextTitle)).setText(((TextView) ((LinearLayout) ((ListView) findViewById(R.id.listView)).getChildAt(info.position)).findViewById(R.id.textViewTitle)).getText().toString());
+			//((EditText) edit.findViewById(R.id.editTextGross)).setText(movies.get(info.position).getGross());
+			//((EditText) edit.findViewById(R.id.editTextYear)).setText(movies.get(info.position).getYear());
+			
+			edit.setOnDismissListener(new OnDismissListener()
+			{
+				@Override
+				public void onDismiss(DialogInterface dialog)
+				{
+					String title = ((EditText) edit.findViewById(R.id.editTextTitle)).getText().toString();
+					String gross = ((EditText) edit.findViewById(R.id.editTextGross)).getText().toString();
+					String year = ((EditText) edit.findViewById(R.id.editTextYear)).getText().toString();
+					
+					/*movies.get(info.position).setTitle(title);
+					movies.get(info.position).setGross(gross);
+					movies.get(info.position).setYear(year);
+					
+					adapter.notifyDataSetChanged();*/
+				}
+			});
+			
+			edit.setOnCancelListener(new OnCancelListener()
+			{
+				@Override
+				public void onCancel(DialogInterface arg0)
+				{
+					//Do nothing
+				}
+			});
+			
+			return true;
+			
+		case R.id.delete:
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			
+			builder.setMessage("Delete movie?");
+			builder.setCancelable(false);
+			builder.setPositiveButton("Yes", new DialogInterface.OnClickListener()
+			{
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					dbHelper.deleteMovie(((TextView) ((LinearLayout) ((ListView) findViewById(R.id.listView)).getChildAt(info.position)).findViewById(R.id.textViewTitle)).getText().toString());
+					refreshCursor();
+				}
+			});
+			builder.setNegativeButton("No", new DialogInterface.OnClickListener()
+			{
+				@Override
+				public void onClick(DialogInterface dialog, int which)
+				{
+					//Do nothing
+				}
+			});
+			
+			AlertDialog alert = builder.show();
+			alert.show();
+			
+			return true;
+			
+		default:
+			return super.onContextItemSelected(item);
+		}
+	}
+}

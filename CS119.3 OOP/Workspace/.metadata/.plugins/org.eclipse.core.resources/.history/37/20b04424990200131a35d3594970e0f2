@@ -1,0 +1,162 @@
+package com.example.lab4_101047;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class DbAdapter
+{
+	public static final String KEY_ROWID = "_id";
+	public static final String KEY_TITLE = "title";
+	public static final String KEY_GROSS = "gross";
+	public static final String KEY_YEAR = "year";
+
+	private DatabaseHelper mDbHelper;
+	private SQLiteDatabase mDb;
+
+	private static final String DATABASE_NAME = "Lab6_101047";
+	private static final String SQLITE_TABLE = "MovieData";
+	private static final int DATABASE_VERSION = 1;
+
+	private final Context mCtx;
+
+	private static final String DATABASE_CREATE = "CREATE TABLE if not exists "
+			+ SQLITE_TABLE + " (" + KEY_ROWID
+			+ " integer PRIMARY KEY autoincrement," + KEY_TITLE + ","
+			+ KEY_GROSS + "," + KEY_YEAR + ");";
+
+	
+	// UTILITY TABLE HELPER CLASS	
+	private static class DatabaseHelper extends SQLiteOpenHelper
+	{
+		DatabaseHelper(Context context)
+		{
+			super(context, DATABASE_NAME, null, DATABASE_VERSION);
+		}
+
+		// DATABASE CREATION
+		@Override
+		public void onCreate(SQLiteDatabase db)
+		{
+			db.execSQL(DATABASE_CREATE);
+		}
+
+		// DATABASE CHANGE
+		@Override
+		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+		{
+			db.execSQL("DROP TABLE IF EXISTS " + SQLITE_TABLE);
+			onCreate(db);
+		}
+	}
+	
+	
+	// LIFE CYCLE
+	public DbAdapter(Context ctx)
+	{
+		this.mCtx = ctx;
+	}
+
+	public DbAdapter open() throws SQLException
+	{
+		mDbHelper = new DatabaseHelper(mCtx);
+		mDb = mDbHelper.getWritableDatabase();
+		
+		return this;
+	}
+
+	public void close()
+	{
+		if (mDbHelper != null)
+		{
+			mDbHelper.close();
+		}
+	}
+
+	// ACTIONS
+	public long createMovie(String title, String gross, String year)
+	{
+		// INSERT
+		ContentValues initialValues = new ContentValues();
+		initialValues.put(KEY_TITLE, title);
+		initialValues.put(KEY_GROSS, gross);
+		initialValues.put(KEY_YEAR, year);
+
+		// parameters
+		// mDb.insert(table, nullColumnHack, values);
+		
+		return mDb.insert(SQLITE_TABLE, null, initialValues);
+	}
+
+	public boolean deleteAllMovies()
+	{
+		// DELETE
+		// parameters
+		// mDb.delete(table, whereClause, whereArgs)
+		
+		int doneDelete = 0;
+		doneDelete = mDb.delete(SQLITE_TABLE, null, null);
+		return doneDelete > 0;
+
+	}
+	
+	public void deleteMovie(String position)
+	{
+
+		System.out.println("Deleted at position " + mDb.delete(SQLITE_TABLE, KEY_ROWID + "=3", null));
+	}
+
+	public Cursor fetchMoviesByName(String inputText) throws SQLException
+	{
+		Cursor mCursor = null;
+		if (inputText == null || inputText.length() == 0)
+		{
+			mCursor = mDb.query(SQLITE_TABLE, new String[] { KEY_ROWID, KEY_TITLE, KEY_GROSS, KEY_YEAR }, null, null, null, null, null);
+
+		}
+		else
+		{
+			mCursor = mDb.query(true, SQLITE_TABLE, new String[] { KEY_ROWID, KEY_TITLE, KEY_GROSS, KEY_YEAR }, KEY_TITLE + " like '%" + inputText + "%' OR " + KEY_YEAR + " like '%" + inputText + "'%", null, null, null, null, null);
+		}
+		if (mCursor != null)
+		{
+			mCursor.moveToFirst();
+		}
+		return mCursor;
+
+	}
+
+	public Cursor fetchAllMovies()
+	{
+		// parameter descriptions
+		// mDb.query(table, columns, selection, selectionArgs, groupBy, having, orderBy)
+
+		Cursor mCursor = mDb.query(SQLITE_TABLE, new String[] { KEY_ROWID, KEY_TITLE, KEY_GROSS, KEY_YEAR }, null, null, null, null, null);
+
+		if (mCursor != null)
+		{
+			mCursor.moveToFirst();
+		}
+		return mCursor;
+	}
+
+	
+	
+	// SEEDING
+	public void seed()
+	{
+		// the Context is the Activity where this is currently used
+		String[] MovieData = mCtx.getResources().getStringArray(R.array.movies_list);
+		
+		// get string-array, parse and store
+		for (String r : MovieData)
+		{
+			String[] data = r.split(";");
+			createMovie(data[0], data[1], data[2]);
+		}
+	}
+
+}

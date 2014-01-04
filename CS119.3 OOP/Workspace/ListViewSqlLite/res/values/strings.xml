@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListViewSqlLite</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="some_text">Philippine Regions</string>
+    <string name="some_hint">Type here to filter</string>
+
+    <string-array name="regions">
+        <item>National Capital Region,NCR; Metro Manila</item>
+        <item>Cordillera Administrative Region,CAR</item>
+        <item>Ilocos Region,Region I</item>
+        <item>Cagayan Valley,Region II</item>
+        <item>Central Luzon,Region III</item>
+        <item>CALABARZON,Region IV-A</item>
+        <item>MIMAROPA,Region IV-B</item>
+        <item>Bicol Region,Region V</item>
+        <item>Western Visayas,Region VI</item>
+        <item>Central Visayas,Region VII</item>
+        <item>Eastern Visayas,Region VIII</item>
+        <item>Zamboanga Peninsula,Region IX</item>
+        <item>Northern Mindanao,Region X</item>
+        <item>Davao Region,Region XI</item>
+        <item>SOCCSKSARGEN,Region XII</item>
+        <item>Caraga,Region XIII</item>
+        <item>Autonomous Region in Muslim Mindanao,ARMM</item>
+    </string-array>
+
+</resources>
