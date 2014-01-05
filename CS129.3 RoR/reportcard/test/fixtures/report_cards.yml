@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subject_name: MyString
+  subject_code: MyString
+  number_of_units: 1
+  numerical_grade: 9.99
+  professor_name: MyString
+
+two:
+  subject_name: MyString
+  subject_code: MyString
+  number_of_units: 1
+  numerical_grade: 9.99
+  professor_name: MyString

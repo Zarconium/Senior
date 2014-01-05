@@ -1,0 +1,42 @@
+<div class="page-header">
+	<h2>Edit Report Card</h2>
+</div>
+
+<%= form_for @reportcard, url: update_reportcard_path, html: {class: "form-horizontal", role: "form"} do |f| %>
+<%= hidden_field_tag(:id, params[:id]) %>
+<div class="form-group">
+	<%= label_tag(:subject_name, "Subject Name", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.text_field :subject_name, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:subject_code, "Subject Code", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.text_field :subject_code, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:number_of_units, "Number of Units", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.text_field :number_of_units, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:numerical_grade, "Numerical Grade", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.text_field :numerical_grade, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:professor_name, "Professor Name", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.text_field :professor_name, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-10">
+		<%= f.submit "Update", class: "btn btn-default" %>
+	</div>
+</div>
+<% end %>

@@ -1,0 +1,24 @@
+<div class="page-header">
+	<h2>Report Cards</h2>
+</div>
+
+<table class="table table-hover">
+	<tr>
+		<th>Actions</th>
+		<th>Subject Name</th>
+		<th>Subject Code</th>
+		<th>Number of Units</th>
+		<th>Numerical Grade</th>
+		<th>Professor</th>
+	</tr>
+	<% @reportcards.each do |reportcard| %>
+	<tr>
+		<td><%= link_to "Edit", edit_reportcard_path(reportcard.id) %> | <%= link_to "Delete", delete_reportcard_path(reportcard.id), :confirm => "Delete this report card?" %></td>
+		<td><%= reportcard.subject_name %></td>
+		<td><%= reportcard.subject_code %></td>
+		<td><%= reportcard.number_of_units %></td>
+		<td><%= reportcard.numerical_grade %></td>
+		<td><%= reportcard.professor_name %></td>
+	</tr>
+	<% end %>
+</table>
