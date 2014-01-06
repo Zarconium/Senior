@@ -1,0 +1,24 @@
+<div class="page-header">
+	<h2>Carpark Slots</h2>
+</div>
+
+<table class="table table-hover">
+	<tr>
+		<th>Actions</th>
+		<th>Plate Number</th>
+		<th>Car Type</th>
+		<th>Parking Date</th>
+		<th>Number of Hours</th>
+		<th>Reserved?</th>
+	</tr>
+	<% @carparks.each do |carpark| %>
+	<tr>
+		<td><%= link_to "Edit", edit_carpark_path(carpark.id) %> | <%= link_to "Delete", delete_carpark_path(carpark.id), :confirm => "Delete this carpark slot?" %></td>
+		<td><%= carpark.plate_number %></td>
+		<td><%= carpark.car_type %></td>
+		<td><%= carpark.parking_date %></td>
+		<td><%= carpark.number_of_hours %></td>
+		<td><%= carpark.reserved %></td>
+	</tr>
+	<% end %>
+</table>

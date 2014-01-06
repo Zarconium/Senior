@@ -1,0 +1,41 @@
+<div class="page-header">
+	<h2>New Carpark Slot</h2>
+</div>
+
+<%= form_for @carpark, url: create_carpark_path, html: {class: "form-horizontal", role: "form"} do |f| %>
+<div class="form-group">
+	<%= label_tag(:plate_number, "Plate Number", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.text_field :plate_number, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:car_type, "Car Type", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.text_field :car_type, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:parking_date, "Parking Date", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.date_field :parking_date, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:number_of_hours, "Number of Hours", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.number_field :number_of_hours, class: "form-control" %>
+	</div>
+</div>
+<div class="form-group">
+	<%= label_tag(:reserved, "Reserved?", class: "col-sm-2 control-label") %>
+	<div class="col-sm-10">
+		<%= f.check_box :reserved, class: "checkbox" %>
+	</div>
+</div>
+<div class="form-group">
+	<div class="col-sm-offset-2 col-sm-10">
+		<%= f.submit "Create", class: "btn btn-default" %>
+	</div>
+</div>
+<% end %>

@@ -1,0 +1,12 @@
+<div class="page-header">
+	<h2>Search Carpark Slots</h2>
+</div>
+
+<%= form_tag search_carpark_path, :method => 'get', class: "form-horizontal", role: "form" do %>
+<div class="input-group">
+<%= text_field_tag :input, nil, class: "form-control" %>
+<span class="input-group-btn">
+<%= button_tag "Search", type: "submit", class: "btn btn-default" %>
+</span>
+</div>
+<% end %>
