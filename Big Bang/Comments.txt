@@ -1,0 +1,53 @@
+http://localhost/crisp/dbms/form_student_application
+> missing "date of application"
+> missing "assigned database id"
+> missing "widowed" option in civil status"
+> "birthplace" and "nationality" option is suppose to be dropdown
+> "region" and "province" option is suppose to be dropdown
+> missing "campus" 
+> "Do you own a computer", "Do you have internet access?" questions are not anymore in the original forms and can be removed 
+
+http://localhost/crisp/dbms
+> under "Programs", "classes"... no available form of class list yet
+> under "Programs", under "SMP Tracker"... missing fields "remarks" and "contract?". Missing forms are Company Information and intenship
+> under "Programs", under "GCAT Tracker" ... no available form for the list of students yet. Is this a student tracker or a proctor tracker? 
+> Missing BEST and Adept tracker (only PRODUCT tracker is available)
+
+
+http://localhost/crisp/dbms/form_teacher_application
+> missing questions "Are you a new applicant", "If no, do you want to update your information?" and "Applying for GCAT?"
+> missing "widowed" option in civil status 
+> Should it be "Doctorate" or "Postgraduate"? 
+> missing "Position of supervisor" in Work Information
+
+http://localhost/crisp/dbms/form_mastertrainer_application
+> missing "widowed" option in civil status
+> can remove "brithdate" option since it is not in the original forms anymore
+
+http://localhost/crisp/dbms/form_proctor_application
+> missing "widowed" option in civil status
+> can remove "brithdate" option since it is not in the original forms anymore
+
+http://localhost/crisp/dbms/form_teacher_profile
+> under "Attendance", under "BEST"... can remove GCAT field since it is not in the original forms anymore
+
+http://localhost/crisp/resources
+> no available status and product tracker forms yet
+
+http://localhost/crisp/dbms/form_teacher_profile
+> under "Stipend"... missing "State Univeristy" field 
+
+Missing forms:
+> Patricipant's Contract (Student)
+> Patricipant's Contract (Teacher)
+> Internship Evaluation
+> Best and Adept Application Form (Teacher)
+> SMP Application (Teacher)
+> SMP T3 Tracker (Teacher)
+> Adept T3 Tracker 
+> Participant Master List
+> GCAT Student Grades Batch Upload
+> BEST Student Grades Batch Upload
+> Adept Student Grades Batch Upload
+> SMP Student Grades Batch Upload
+
