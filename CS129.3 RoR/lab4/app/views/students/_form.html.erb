@@ -1,0 +1,13 @@
+<%= simple_form_for(student, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :middle_name %>
+  <%= f.input :date_of_birth, :start_year => Date.today.year - 30 %>
+  <%= f.input :address %>
+  <%= f.input :student_number %>
+  <%= f.input :contact_number %>
+  <%= f.input :email %>
+  <%#= f.association :student %>
+  <hr>
+  <%= f.submit "Save Student" %>
+<% end %>
