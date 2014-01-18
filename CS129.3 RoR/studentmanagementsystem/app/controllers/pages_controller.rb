@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  def index
-    
-  end
+	def index
+		redirect_to students_path
+	end
 end

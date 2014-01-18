@@ -1,0 +1,30 @@
+<div class="content">
+	<div class="row">
+		<div class="col-md-12">
+			<h1><%= "#{@subject.code} #{@subject.name}" %></h1>
+			<hr>
+			<table class="table table-bordered table-striped">
+				<tr>
+					<th>Code</th>
+					<td><%= @subject.code %></td>
+				</tr>
+				<tr>
+					<th>Name</th>
+					<td><%= @subject.name %></td>
+				</tr>
+				<tr>
+					<th>Number of Units</th>
+					<td><%= @subject.num_units %></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<hr>
+			<%= link_to "Edit", edit_subject_path(@subject.id), class: "btn btn-primary" %>
+			<%= link_to "Delete", subject_path(@subject.id), method: :delete, confirm: "Are you sure?", class: "btn btn-danger" %>
+			<hr>
+		</div>
+	</div>
+</div>

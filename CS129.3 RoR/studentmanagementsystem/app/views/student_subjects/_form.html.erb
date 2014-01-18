@@ -1,0 +1,10 @@
+<%= simple_form_for(student_subject, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+	<%= f.association :student, error_html: { class: 'text-danger'} %>
+	<%= f.association :subject, error_html: { class: 'text-danger'} %>
+	<%= f.input :date_enrolled, error_html: { class: 'text-danger'} %>
+	<%= f.input :date_completed, error_html: { class: 'text-danger'} %>
+	<%= f.input :letter_grade, as: :select, collection: StudentSubject::LETTER_GRADE, error_html: { class: 'text-danger'} %>
+	<%= f.input :numeric_grade, error_html: { class: 'text-danger'} %>
+	<hr>
+	<%= f.submit "Save", class: 'btn btn-primary' %>
+<% end %>

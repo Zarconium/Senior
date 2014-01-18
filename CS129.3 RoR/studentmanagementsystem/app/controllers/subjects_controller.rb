@@ -42,13 +42,6 @@ class SubjectsController < ApplicationController
     redirect_to subjects_path
   end
 
-  # def add_payment
-  #   @subject = Subject.find(params[:id])
-  #   @payment = Payment.new
-  #   @payment.subject = @subject
-  #   render "payments/new"
-  # end
-
   private
 
   def subject_params

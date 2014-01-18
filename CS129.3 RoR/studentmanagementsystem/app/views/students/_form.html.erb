@@ -1,12 +1,12 @@
 <%= simple_form_for(student, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
-  <%= f.input :first_name %>
-  <%= f.input :last_name %>
-  <%= f.input :middle_name %>
-  <%= f.input :date_of_birth, :start_year => Date.today.year - 30 %>
-  <%= f.input :address %>
-  <%= f.input :student_number %>
-  <%= f.input :contact_number %>
-  <%= f.input :email %>
-  <hr>
-  <%= f.submit "Save Student" %>
+	<%= f.input :first_name, error_html: { class: 'text-danger'} %>
+	<%= f.input :last_name, error_html: { class: 'text-danger'} %>
+	<%= f.input :middle_name, error_html: { class: 'text-danger'} %>
+	<%= f.input :date_of_birth, :start_year => Date.today.year - 30, error_html: { class: 'text-danger'} %>
+	<%= f.input :address, error_html: { class: 'text-danger'} %>
+	<%= f.input :student_number, error_html: { class: 'text-danger'} %>
+	<%= f.input :contact_number, error_html: { class: 'text-danger'} %>
+	<%= f.input :email, error_html: { class: 'text-danger'} %>
+	<hr>
+	<%= f.submit "Save", class: 'btn btn-primary' %>
 <% end %>
