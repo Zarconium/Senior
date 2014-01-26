@@ -1,50 +1,52 @@
 class SubjectsController < ApplicationController
-  
-  def index
-    @subjects = Subject.all
-  end
 
-  def show
-    @subject = Subject.find(params[:id])
-  end
+	before_filter :authenticate_user!
+	
+	def index
+		@subjects = Subject.all
+	end
 
-  def new
-    @subject = Subject.new
-  end
+	def show
+		@subject = Subject.find(params[:id])
+	end
 
-  def create
-    @subject = Subject.new(subject_params)
+	def new
+		@subject = Subject.new
+	end
 
-    if @subject.save
-      redirect_to subjects_path
-    else
-      render :new
-    end
-  end
+	def create
+		@subject = Subject.new(subject_params)
 
-  def edit
-    @subject = Subject.find(params[:id])
-  end
+		if @subject.save
+			redirect_to subjects_path
+		else
+			render :new
+		end
+	end
 
-  def update
-    @subject = Subject.find(params[:id])
+	def edit
+		@subject = Subject.find(params[:id])
+	end
 
-    if @subject.update_attributes(subject_params)
-      redirect_to subjects_path
-    else
-      render :edit
-    end
-  end
+	def update
+		@subject = Subject.find(params[:id])
 
-  def destroy
-    @subject = Subject.find(params[:id])
-    @subject.destroy
-    redirect_to subjects_path
-  end
+		if @subject.update_attributes(subject_params)
+			redirect_to subjects_path
+		else
+			render :edit
+		end
+	end
 
-  private
+	def destroy
+		@subject = Subject.find(params[:id])
+		@subject.destroy
+		redirect_to subjects_path
+	end
 
-  def subject_params
-    params.require(:subject).permit!
-  end
+	private
+
+	def subject_params
+		params.require(:subject).permit!
+	end
 end
