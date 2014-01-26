@@ -1,0 +1,62 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <h1><%= @client.name %></h1>
+      <hr>
+      <table class="table table-bordered table-striped">
+        <tr>
+          <th>Contact Number</th>
+          <td><%= @client.contact_number %></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td><%= @client.email %></td>
+        </tr>
+        <tr>
+          <th>Priority</th>
+          <td><%= @client.priority %></td>
+        </tr>
+        <tr>
+          <th>Latest Payment Trasacted</th>
+          <td><%= @client.latest_payment_transacted.amount %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <hr>
+      <%= link_to "Add Payment", new_client_payment_path(@client.id), class: "btn btn-primary" %>
+      <%= link_to "Edit", edit_client_path(@client.id), class: "btn btn-info" %>
+      <%= link_to "Delete", client_path(@client.id), method: :delete, confirm: "Are you sure?", class: "btn btn-danger" %>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Payments</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered table-striped">
+        <tr>
+          <th>Amount</th>
+          <th>Date Paid</th>
+          <th>Actions</th>
+        </tr>
+        <% @client.payments.each do |p| %>
+          <tr>
+            <td><%= p.amount %></td>
+            <td><%= p.date_paid %></td>
+            <td>
+              <%= link_to "Edit", edit_payment_path(p.id) %>
+              <%= link_to "Delete", payment_path(p.id), method: :delete, confirm: "Are you sure?" %>
+            </td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>

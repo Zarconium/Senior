@@ -1,0 +1,59 @@
+<div class="content">
+	<div class="row">
+		<div class="col-md-12">
+			<h1><%= "#{@office.room_number} - #{@office.name}" %></h1>
+			<hr>
+			<table class="table table-bordered table-striped">
+				<tr>
+					<th>Name</th>
+					<td><%= @office.name %></td>
+				</tr>
+				<tr>
+					<th>Room Number</th>
+					<td><%= @office.room_number %></td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<td><%= @office.description %></td>
+				</tr>
+				<tr>
+					<th>Total Number of Visitors</th>
+					<td><%= @office.total_visitors %></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<%= link_to "Edit", edit_office_path(@office.id), class: "btn btn-primary" %>
+			<%= link_to "Delete", office_path(@office.id), method: :delete, confirm: "Are you sure?", class: "btn btn-danger" %>
+			<hr>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Visitor Log</h3>
+			<%= link_to "New Record", new_log_record_path, class: "btn btn-success" %>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Visitor</th>
+						<th>Purpose</th>
+						<th>Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% @office.log_records.each do |logrecord| %>
+					<% if logrecord.user == current_user %>
+					<tr>
+						<td><%= link_to logrecord.visitor_name, log_record_path(logrecord.id) %></td>
+						<td><%= logrecord.purpose_of_visit %></td>
+						<td><%= logrecord.time_of_visit %></td>
+					</tr>
+					<% end %>
+					<% end %>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+<div class="page-header">
+	<h1>Visitor Log</h1>
+</div>
+
+<%= link_to "New Record", new_log_record_path, class: "btn btn-success" %>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Visitor</th>
+			<th>Purpose</th>
+			<th>Time</th>
+			<th>Office</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @logrecords.each do |logrecord| %>
+		<tr>
+			<td><%= link_to logrecord.visitor_name, log_record_path(logrecord.id) %></td>
+			<td><%= logrecord.purpose_of_visit %></td>
+			<td><%= logrecord.time_of_visit %></td>
+			<td><%= link_to logrecord.office.name, office_path(logrecord.office.id) %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

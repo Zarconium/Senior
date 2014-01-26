@@ -1,0 +1,33 @@
+<div class="content">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Log Record</h1>
+			<hr>
+			<table class="table table-bordered table-striped">
+				<tr>
+					<th>Visitor</th>
+					<td><%= @logrecord.visitor_name %></td>
+				</tr>
+				<tr>
+					<th>Purpose</th>
+					<td><%= @logrecord.purpose_of_visit %></td>
+				</tr>
+				<tr>
+					<th>Time</th>
+					<td><%= @logrecord.time_of_visit %></td>
+				</tr>
+				<tr>
+					<th>Office</th>
+					<td><%= link_to @logrecord.office.name, office_path(@logrecord.office.id) %></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<%= link_to "Edit", edit_log_record_path(@logrecord.id), class: "btn btn-primary" %>
+			<%= link_to "Delete", log_record_path(@logrecord.id), method: :delete, confirm: "Are you sure?", class: "btn btn-danger" %>
+			<hr>
+		</div>
+	</div>
+</div>

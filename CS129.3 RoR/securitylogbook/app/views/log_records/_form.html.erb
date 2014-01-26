@@ -1,0 +1,9 @@
+<%= simple_form_for(log_record, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+	<%= f.hidden_field :user_id, :value => current_user.id %>
+	<%= f.input :visitor_name, error_html: { class: 'text-danger'} %>
+	<%= f.input :purpose_of_visit, error_html: { class: 'text-danger'} %>
+	<%= f.input :time_of_visit, error_html: { class: 'text-danger'} %>
+	<%= f.association :office, error_html: { class: 'text-danger'} %>
+	<hr>
+	<%= f.submit "Save", class: 'btn btn-primary' %>
+<% end %>

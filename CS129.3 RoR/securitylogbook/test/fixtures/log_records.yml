@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  visitor_name: MyString
+  purpose_of_visit: MyString
+  time_of_visit: 2014-01-26 13:16:57
+  office_id: 1
+
+two:
+  user_id: 1
+  visitor_name: MyString
+  purpose_of_visit: MyString
+  time_of_visit: 2014-01-26 13:16:57
+  office_id: 1

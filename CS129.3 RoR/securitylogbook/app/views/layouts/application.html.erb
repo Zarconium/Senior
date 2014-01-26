@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Office Log Management System</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body style="padding-top: 70px; padding-bottom: 70px;">
+	<%= render partial: 'shared/nav' %>
+	<div class="container">
+	<%= yield %>
+	</div>
+</body>
+</html>

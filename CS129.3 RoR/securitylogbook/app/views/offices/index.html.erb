@@ -1,0 +1,26 @@
+<div class="page-header">
+	<h1>Offices</h1>
+</div>
+
+<%= link_to "Add Office", new_office_path, class: "btn btn-success" %>
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Room Number</th>
+			<th>Description</th>
+			<th>Total Number of Visitors</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @offices.each do |office| %>
+		<tr>
+			<td><%= link_to office.name, office_path(office.id) %></td>
+			<td><%= office.room_number %></td>
+			<td><%= office.description %></td>
+			<td><%= office.total_visitors %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

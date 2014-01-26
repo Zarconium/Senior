@@ -1,0 +1,7 @@
+<%= simple_form_for(office, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+	<%= f.input :name, error_html: { class: 'text-danger'} %>
+	<%= f.input :room_number, error_html: { class: 'text-danger'} %>
+	<%= f.input :description, error_html: { class: 'text-danger'} %>
+	<hr>
+	<%= f.submit "Save", class: 'btn btn-primary' %>
+<% end %>
