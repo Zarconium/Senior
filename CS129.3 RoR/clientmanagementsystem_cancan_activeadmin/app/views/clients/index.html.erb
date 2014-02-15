@@ -1,0 +1,31 @@
+<div class="content">
+  <h1>My Clients</h1>
+  <hr>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+        <th>Total Amounts Paid</th>
+        <th>Latest Payment</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @clients.each do |client| %>
+        <tr>
+          <td><%= link_to client.name, client_path(client.id) %></td>
+          <td><%= client.contact_number %></td>
+          <td><%= client.email %></td>
+          <td><%= "$ #{client.total_amount_paid}" %></td>
+          <td><%= "$ #{client.latest_payment_transacted.amount}" %></td>
+          <td>
+            <%= link_to "Edit", edit_client_path(client.id) %>
+            <%= link_to "Delete", client_path(client.id), method: :delete, confirm: "Are you sure?" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

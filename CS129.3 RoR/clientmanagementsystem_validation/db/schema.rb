@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140106060122) do
+ActiveRecord::Schema.define(version: 20140108062136) do
 
   create_table "clients", force: true do |t|
     t.string   "first_name"
@@ -24,6 +24,14 @@ ActiveRecord::Schema.define(version: 20140106060122) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "blacklisted"
+  end
+
+  create_table "payments", force: true do |t|
+    t.decimal  "amount"
+    t.date     "date_paid"
+    t.integer  "client_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
