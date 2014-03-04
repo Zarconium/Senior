@@ -1,0 +1,72 @@
+<div class="col-xs-12">
+	<div class="row img-rounded" style="background:#fff;margin-top:50px;box-shadow: 0px 0px 10px #888888;height:512px;">
+		<div class="col-xs-6" style="width:512px;">
+			<div class="row">
+				<a href="<%= user_entry_path(@user_entry.id) %>">
+					<div class="photo-container" style="width:512px;height:512px;line-height:512px;border-top-left-radius:6px;border-bottom-left-radius: 6px;background:url(<%= @user_entry.photo.url(:feed) %>) no-repeat center center;border-right:1px solid #c0c0c0;"></div>
+				</a>
+			</div>
+		</div>
+		<div class="col-xs-6" style="padding-top:15px;padding-right:0px;word-wrap:break-word;">
+			<div class="row">
+				<div class="col-xs-1">
+					<%= image_tag @user_entry.user.profile_picture.url(:feed) %>
+				</div>
+				<div class="col-xs-9">
+					<div class="row" style="padding-left:15px;">
+						<a href="/<%= @user_entry.user.handle %>"><strong><%= @user_entry.user.handle %></strong></a><br>
+						<small><%= time_ago_in_words(@user_entry.created_at) %> ago</small>
+					</div>
+					<div class="row" style="padding-left:15px;">
+						<strong><%= @user_entry.title %></strong>
+					</div>
+					<div class="row" style="padding-left:15px;">
+						<%= @user_entry.description %>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<% if @user_entry.user.id == current_user.id %>
+						<a class="btn btn-info btn-xs" href="<%= edit_user_entry_path(@user_entry.id) %>"><span class="glyphicon glyphicon-pencil"></span></a>
+						<a class="btn btn-danger btn-xs" href="<%= user_entry_path(@user_entry.id) %>" data-confirm="Delete post?" data-method="delete"><span class="glyphicon glyphicon-trash"></span></a>
+					<% end %>
+				</div>
+			</div>
+			<div class="row" style="padding:15px;border-top:1px solid #c0c0c0;">
+				<%= form_for @comment do |f| %>
+					<%= f.hidden_field :user_id, :value => current_user.id %>
+					<%= f.hidden_field :user_entry_id, :value => @user_entry.id %>
+					<div class="input-group">
+						<%= f.text_field :content, class: "form-control" %>
+						<span class="input-group-btn">
+							<%= f.submit "Post Comment", class: "btn btn-default" %>
+						</span>
+					</div>
+				<% end %>
+			</div>
+			<div class="row" style="padding-left:15px;">
+				<% if @user_entry.comments %>
+				<% @user_entry.comments.each do |comment| %>
+				<div class="row" style="padding-bottom:10px;">
+					<div class="col-xs-1">
+						<%= image_tag comment.user.profile_picture.url(:feed) %>
+					</div>
+					<div class="col-xs-9">
+						<div class="row" style="padding-left:15px;word-wrap:break-word;">
+							<a href="/<%= comment.user.handle %>"><strong><%= comment.user.handle %></strong></a><br>
+							<small><%= comment.content %></small>
+						</div>
+					</div>
+					<div class="col-xs-1">
+						<div class="row" style="padding-left:15px;">
+							<% if comment.user.id == current_user.id || @user_entry.user.id == current_user.id%>
+							<a class="btn btn-danger btn-xs" href="/<%= comment_path(comment.id) %>" data-confirm="Delete comment?" data-method="delete"><span class="glyphicon glyphicon-trash"></span></a>
+							<% end %>
+						</div>
+					</div>
+				</div>
+				<% end %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

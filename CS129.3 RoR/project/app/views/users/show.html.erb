@@ -1,0 +1,52 @@
+<div class="col-xs-offset-3 col-xs-6 img-rounded" style="width:512px;">
+	<div class="row img-rounded" style="background:#fff;padding-top:15px;padding-bottom:15px;margin-bottom:20px;box-shadow: 0px 0px 10px #888888;">
+		<div class="col-xs-4">
+			<div class="img-rounded" style="width:122px;padding:5px;border:1px solid #c0c0c0;">
+				<%= image_tag @user.profile_picture.url(:profile), class: "img-rounded" %>
+				<% if @user.id == current_user.id %>
+					<a class="btn btn-primary btn-sm" style="width:110px;margin-top:5px;" href="<%= edit_user_path(@user.handle) %>"><strong>Edit Profile</strong></a>
+				<% elsif !@user.friend_with? current_user %>
+					<% if @user.invited_by? current_user %>
+						<a class="btn btn-info btn-sm" style="width:110px;margin-top:5px;" href="<%= remove_friend_path(@user.handle) %>"><strong>Pending</strong></a>
+					<% elsif @user.invited? current_user %>
+						<a class="btn btn-info btn-sm" style="width:110px;margin-top:5px;" href="<%= approve_friend_path(@user.handle) %>"><strong>Accept</strong></a>
+					<% else %>
+						<a class="btn btn-primary btn-sm" style="width:110px;margin-top:5px;" href="<%= add_friend_path(@user.handle) %>"><strong>Add Friend</strong></a>
+					<% end %>
+				<% elsif @user.friend_with? current_user %>
+					<a class="btn btn-success btn-sm" style="width:110px;margin-top:5px;" href="<%= remove_friend_path(@user.handle) %>"><strong>Friends</strong></a>
+				<% end %>
+			</div>
+		</div>
+		<div class="col-xs-8">
+			<h1><%= @user.handle %></h1>
+			<h4><%= @user.email %></h4>
+			<h4><%= @user.contact_number %></h4>
+		</div>
+		<div class="row">
+			<div class="btn-group">
+				<button type="button" class="btn btn-default btn-lg"><%= @user.user_entries.count %><br><small>posts</small></button>
+				<a class="btn btn-default btn-lg" href="<%= friends_path(@user.handle) %>"><%= @user.friends.count %><br><small>friends</small></a>
+				<% if @user.id == current_user.id %>
+				<a class="btn btn-default btn-lg" href="<%= friend_requests_path(@user.handle) %>"><%= @user.pending_invited_by.count %><br><small>friend requests</small></a>
+				<% end %>
+			</div>
+		</div>
+	</div>
+	<% if @user.user_entries %>
+	<% @user.user_entries.each do |user_entry| %>
+	<div class="row img-rounded" style="background:#fff;margin-bottom:20px;box-shadow: 0px 0px 10px #888888;">
+		<div class="col-xs-6" style="width:512px;">
+			<div class="row">
+				<a href="<%= user_entry_path(user_entry.id) %>">
+					<div class="photo-container" style="width:512px;height:512px;line-height:512px;border-radius:6px;background:url(<%= user_entry.photo.url(:feed) %>) no-repeat center center;"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<% end %>
+	<% end %>
+	<div class="button-fixed" style="position:fixed;right:10px;bottom:10px;">
+		<button type="button" class="btn btn-default btn-lg" onclick="$('html, body').animate({ scrollTop:0 }, 300);" data-toggle="tooltip" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+	</div>
+</div>

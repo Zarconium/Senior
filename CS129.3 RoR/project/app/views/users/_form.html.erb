@@ -1,0 +1,7 @@
+<%= simple_form_for(user, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }, html: { multipart: true }) do |f| %>
+  <%= f.input :email %>
+  <%= f.input :handle %>
+  <%= f.input :contact_number %>
+  <%= f.input :profile_picture, as: :file %>
+  <%= f.submit "Submit", class: "btn btn-success" %>
+<% end %>

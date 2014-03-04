@@ -1,0 +1,13 @@
+<%= simple_form_for(client, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }, html: { multipart: true }) do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :middle_name %>
+  <%= f.input :last_name %>
+  <%= f.input :contact_number %>
+  <%= f.input :company_name %>
+  <%= f.input :email %>
+  <%= f.input :profile_picture, as: :file %>
+  <%= f.input :description, as: :string %>
+  <%= f.input :priority, as: :select, collection: Client::PRIORITY %>
+  <hr>
+  <%= f.submit "Save Client" %>
+<% end %>

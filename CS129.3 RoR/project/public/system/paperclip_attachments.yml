@@ -1,0 +1,9 @@
+---
+:User:
+  :profile_picture:
+  - :feed
+  - :nav
+  - :profile
+:UserEntry:
+  :photo:
+  - :feed

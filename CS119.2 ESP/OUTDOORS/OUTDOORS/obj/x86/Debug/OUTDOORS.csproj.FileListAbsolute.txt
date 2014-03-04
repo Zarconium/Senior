@@ -1,10 +1,7 @@
 C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\OUTDOORS.exe
 C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\OUTDOORS.pdb
-C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Main.resources
 C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Properties.Resources.resources
-C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.exe
 C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.pdb
 C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\bin\Debug\SYSPROWCFServicesClientLibrary40.dll
@@ -21,3 +18,8 @@ D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Deb
 D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Invqry.resources
 D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Output.resources
 D:\Files2\RJFiles\School\Ateneo\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.About.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.csprojResolveAssemblyReference.cache
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.About.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Invqry.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.Output.resources
+C:\Users\Aspire 1-722\Desktop\Senior\CS119.2 ESP\OUTDOORS\OUTDOORS\obj\x86\Debug\OUTDOORS.csproj.GenerateResource.Cache

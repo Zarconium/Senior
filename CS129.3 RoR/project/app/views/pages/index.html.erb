@@ -1,0 +1,42 @@
+<div class="col-xs-12">
+	<% if @user_entries %>
+	<% @user_entries.each do |user_entry| %>
+	<div class="row" style="padding-bottom:20px;word-wrap:break-word;">
+		<div class="col-xs-3">
+			<div class="col-xs-8 text-right">
+				<a href="<%= user_entry.user.handle %>"><strong><%= user_entry.user.handle %></strong></a><br>
+				<%= time_ago_in_words(user_entry.created_at) %> ago
+			</div>
+			<div class="col-xs-4">
+				<%= image_tag user_entry.user.profile_picture.url(:feed), class: "img-rounded", style: "border:1px solid #ddd" %>
+			</div>
+		</div>
+		<div class="col-xs-6 img-rounded" style="background:#fff;width:512px;box-shadow: 0px 0px 10px #888888;">
+			<div class="row">
+				<a href="<%= user_entry_path(user_entry.id) %>">
+					<div class="photo-container" style="width:512px;height:512px;line-height:512px;border-top-left-radius: 6px;border-top-right-radius: 6px;background:url(<%= user_entry.photo.url(:feed) %>) no-repeat center center"></div>
+				</a>
+			</div>
+			<div class="row" style="border-bottom:1px solid #c0c0c0;border-top:1px solid #c0c0c0;">
+				<div class="col-xs-6">
+					<h4><strong><%= user_entry.title %></strong></h4>
+				</div>
+				<div class="col-xs-6">
+					<h4><p class="text-right"><small><%= user_entry.comments.count %> Comments</small><p></h4>
+				</div>
+			</div>
+			<div class="row" style="padding:10px;">
+				<h4><%= user_entry.description %></h4>
+			</div>
+		</div>
+	</div>
+	<% end %>
+	<% end %>
+	<div class="button-fixed" style="position:fixed;right:10px;bottom:10px;">
+		<a class="btn btn-default btn-lg" href="<%= new_user_entry_path %>" data-toggle="tooltip" title="New Photo"><span class="glyphicon glyphicon-camera"></span></a>
+		<button type="button" class="btn btn-default btn-lg" onclick="$('html, body').animate({ scrollTop:0 }, 300);" data-toggle="tooltip" title="Back to top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+	</div>
+</div>
+<script type="text/javascript">
+$('[data-toggle="tooltip"]').tooltip();
+</script>
