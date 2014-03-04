@@ -1,0 +1,31 @@
+<div class="page-header">
+	<h1>All Songs</h1>
+</div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Actions</th>
+			<th>Album</th>
+			<th>Title</th>
+			<th>Duration</th>
+			<th>Composer</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% if @songs.count > 0 %>
+		<% @songs.each do |song| %>
+		<tr>
+			<td><%= link_to "View", song_path(song.id) %> | <%= link_to "Edit", edit_song_path(song.id) %></td>
+			<td><%= song.album %></td>
+			<td><%= song.song_title %></td>
+			<td><%= song.duration %>s</td>
+			<td><%= song.composer %></td>
+		</tr>
+		<% end %>
+		<% else %>
+		<tr>
+			<td colspan="3">No songs</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

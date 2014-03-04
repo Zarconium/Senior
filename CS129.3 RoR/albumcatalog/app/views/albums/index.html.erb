@@ -1,0 +1,29 @@
+<div class="page-header">
+	<h1>All Albums</h1>
+</div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Actions</th>
+			<th>Title</th>
+			<th>Artist</th>
+			<th>Release Date</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% if @albums.count > 0 %>
+		<% @albums.each do |album| %>
+		<tr>
+			<td><%= link_to "View", album_path(album.id) %> | <%= link_to "Edit", edit_album_path(album.id) %></td>
+			<td><%= album.album_title %></td>
+			<td><%= album.album_artist %></td>
+			<td><%= album.release_date %></td>
+		</tr>
+		<% end %>
+		<% else %>
+		<tr>
+			<td colspan="3">No albums</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

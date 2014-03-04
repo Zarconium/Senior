@@ -1,0 +1,8 @@
+<%= simple_form_for(song, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+	<%= f.association :album, error_html: { class: 'text-danger'} %>
+	<%= f.input :song_title, error_html: { class: 'text-danger'} %>
+	<%= f.input :duration, error_html: { class: 'text-danger'} %>
+	<%= f.input :composer, error_html: { class: 'text-danger'} %>
+	<hr>
+	<%= f.submit "Submit", class: 'btn btn-primary' %>
+<% end %>

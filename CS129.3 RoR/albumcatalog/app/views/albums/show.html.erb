@@ -1,0 +1,48 @@
+<div class="page-header">
+	<h1>Album</h1>
+</div>
+<table class="table table-bordered">
+	<tr>
+		<th>Title</th>
+		<td><%= @album.album_title %></td>
+	</tr>
+	<tr>
+		<th>Artist</th>
+		<td><%= @album.album_artist %></td>
+	</tr>
+	<tr>
+		<th>Release Date</th>
+		<td><%= @album.release_date %></td>
+	</tr>
+</table>
+<%= link_to "Edit", edit_album_path(@album.id), class: "btn btn-primary" %>
+<%= link_to "Delete", album_path(@album.id), class: "btn btn-danger", method: :delete, confirm: "Delete album?" %>
+<div class="page-header">
+	<h2>Songs</h2>
+</div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Actions</th>
+			<th>Title</th>
+			<th>Duration</th>
+			<th>Composer</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% if @album.songs.count > 0 %>
+		<% @album.songs.each do |song| %>
+		<tr>
+			<td><%= link_to "View", song_path(song.id) %> | <%= link_to "Edit", edit_song_path(song.id) %></td>
+			<td><%= song.song_title %></td>
+			<td><%= song.duration %>s</td>
+			<td><%= song.composer %></td>
+		</tr>
+		<% end %>
+		<% else %>
+		<tr>
+			<td colspan="3">No songs</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

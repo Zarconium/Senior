@@ -1,0 +1,7 @@
+<%= simple_form_for(album, defaults: { wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } }) do |f| %>
+	<%= f.input :album_title, error_html: { class: 'text-danger'} %>
+	<%= f.input :album_artist, error_html: { class: 'text-danger'} %>
+	<%= f.input :release_date, :start_year => Date.today.year - 100, error_html: { class: 'text-danger'} %>
+	<hr>
+	<%= f.submit "Submit", class: 'btn btn-primary' %>
+<% end %>
